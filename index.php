@@ -13,12 +13,15 @@
 		<div class="fecha">
 			<?php the_time('Y-m-d'); ?> <?php _e("@"); ?> <?php the_time('H:i'); ?>
 		</div>
+		<div class="meta">
+			Publicado por <a href="mailto:<?php echo antispambot(get_the_author_email()); ?>"><?php the_author(); ?></a>. Filled under: <?php the_category(',') ?> <?php the_tags('Tags: ', ', ', ''); ?> &bull; <?php comments_popup_link('No Comments','1 Comment','% Comments'); ?> <?php edit_post_link(' &mdash; (Edit this?)'); ?>
+		</div>
 	</div>
 	
 <div class="main">
 	<?php the_content('Read more...?'); ?>
 </div>
-<div class="meta">Publicado por <a href="mailto:<?php echo antispambot(get_the_author_email()); ?>"><?php the_author(); ?></a>. Filled under: <?php the_category(',') ?> <?php the_tags('Tags: ', ', ', ''); ?> &bull; <?php comments_popup_link('No Comments','1 Comment','% Comments'); ?> <?php edit_post_link(' &mdash; (Edit this?)'); ?></div>
+
 
    </div>
     

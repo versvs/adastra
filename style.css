@@ -26,6 +26,7 @@ Para WordPress 3.1+ :)
 
 #contenido {
 	margin: 15px 0px;
+	padding-bottom: 20px;
 	background: #e6e2c5;
 	}
 	
@@ -163,20 +164,54 @@ text-decoration:none;
 
 /* Posts */
 
+.titulofecha {
+	position: relative;
+	min-height: 45px;
+	width: 100%;
+	}
+
+.titulo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	}
+	
+.fecha {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	}
+	
+.meta{
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	font-size:9px;
+	line-height:15px;
+	display:inline;
+	color:#333;
+	padding: 5px 0;
+/*	margin:0 0 30px 0; */
+}
+
+
 #main{
-float:left;
-width:685px;
+	position: relative;
+	width: 685px;
 }
 
 .post{
-padding:5px;
-text-align:justify;
+	background: url("imagenes/separador.gif") no-repeat scroll center bottom transparent;
+	padding:5px;
+	margin-bottom: 15px;
+	text-align:justify;
 }
 
 .main{
-text-align:justify;
-border-bottom:1px solid #bbb;
-font-size: 130%;
+	position: relative;
+	padding: 10px 0;
+	text-align:justify;
+	font: 16px Courier;
 }
 
 .main p{
@@ -220,15 +255,6 @@ padding:0px;
 border:0px;
 }
 
-
-.meta{
-font-size:9px;
-line-height:15px;
-display:inline;
-color:#333;
-padding:5px;
-margin:0 0 30px 0;
-}
 
 .navigation{
 font-size:11px;
