@@ -15,8 +15,8 @@ Para WordPress 3.1+ :)
 /* Estructura */
 
 #wrapper {
-	margin: auto 0;
-	background: #fff !important;
+	margin: 0 auto;
+	width:650px;
 }
 
 #header {
@@ -111,14 +111,6 @@ h4{
 text-align:center;
 font-size:12px;
 color:#000;
-}
-
-/* Blog Contents */
-
-#wrapper{
-width:650px;
-margin:0 auto;
-background: #e6e2c5;
 }
 
 
