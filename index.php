@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
+<div id="contenido">
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 <div class="post">
 <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 <div class="main">
@@ -19,6 +22,8 @@
 <div class="navigation_group">
 	<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
 	<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+</div>
+
 </div>
 
     <?php get_footer(); ?>
