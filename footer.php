@@ -1,8 +1,9 @@
 </div>
 
 <div id="footer">
-&copy; <?php the_time('Y'); ?> <?php bloginfo('name'); ?><br />
-Capricorn Theme by <a href="http://random-is.me" title="A blog about WordPress, the Internet, and anything else you can think of!" rel="follow">Shaibanii</a> &bull;  Powered by <a href="http://wordpress.org">WordPress</a>
+Tema <em>Ad Astra</em> por <a href="http://www.versvs.net/" title="Jose Alcántara" rel="follow">Jose Alcántara</a> &bull;  Lees esto gracias a <a href="http://wordpress.org">WordPress</a>
+
+<div id="devolucion"><img src="imagenes/devolucion.png" alt=""/></div>
 </div>
    
    <?php wp_footer(); ?> 
