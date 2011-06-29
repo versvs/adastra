@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<!-- #contenido -->
 <div id="contenido">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -24,8 +25,13 @@
 	<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
 </div>
 
+	<!-- #footer -->
+    <?php get_footer(); ?>
+	<!-- /#footer -->
+	
+<!-- /#contenido -->
 </div>
 
-    <?php get_footer(); ?>
+
 
     
