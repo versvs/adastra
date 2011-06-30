@@ -171,23 +171,22 @@ text-decoration:none;
 	}
 
 .titulo {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+	max-width: 63%; /* siempre garantizamos un mínimo margen */
 	}
 	
 .fecha {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	max-width: 33%; /* siempre garantizamos un mínimo margen */
 	font-size: 20px;
 	font-weight: bold;
 	}
 	
 .meta{
-	position: absolute;
-	top: 25px;
-	left: 0px;
+	position: relative;
+	/* top: 25px;
+	left: 0px; */
 	font-size:9px;
 	line-height:15px;
 	display:inline;
