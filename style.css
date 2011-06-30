@@ -1,5 +1,5 @@
 /*
-Theme Name: AdAstra
+Theme Name: Ad Astra
 Theme URI: http://www.versvs.net/
 Version: 0.1
 Description: AdAstra es un tema sencillo, con una única columna diseñado para ser ligero.
@@ -96,13 +96,13 @@ text-decoration:none;
 
 
 h2{
-font-size:20px;
-margin:5px 0 7px 0;
+font-size: 20px;
+margin: 0 0 7px 0;
 text-align:justify;
 }
 
 h2 a{
-color:#222;
+color:#8E7A5B;
 text-decoration:none;
 }
 
@@ -180,6 +180,8 @@ text-decoration:none;
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	font-size: 20px;
+	font-weight: bold;
 	}
 	
 .meta{
