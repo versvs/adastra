@@ -22,24 +22,27 @@ Para WordPress 3.1+ :)
 #header {
 	margin: 15px 0;
 	background: #e6e2c5;
+	border: 2px solid #8E7A5B;
 	}
 
 #contenido {
 	margin: 15px 0px;
 	padding-bottom: 20px;
 	background: #e6e2c5;
+   border: 2px solid #8E7A5B;
 	}
 	
 #footer {
 	margin: 30px 0;
 	padding: 10px;
 	background: #e6e2c5;
+	border: 2px solid #8E7A5B;
 	}
 	
 	
 
 body{
-background-color:#8E7A5B;
+background-color:#ccc3b5;
 color:#8E7A5B;
 font:11px "Ubuntu", "Liberation Sans", Verdana, Arial, Helvetica, sans-serif;
 padding:0;
@@ -172,6 +175,7 @@ text-decoration:none;
 
 .titulo {
 	max-width: 63%; /* siempre garantizamos un mínimo margen */
+	font-variant: small-caps;
 	}
 	
 .fecha {
@@ -260,6 +264,17 @@ border:0px;
 .navigation{
 font-size:11px;
 }
+
+
+.paginado {
+	padding: 5px;
+	}
+	
+.paginado a {
+	text-transform: uppercase;
+	color: #8E7A5B;
+	}
+	
 
 /* Comments */
 

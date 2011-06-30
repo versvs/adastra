@@ -25,7 +25,7 @@
 <?php include (TEMPLATEPATH . '/404.php'); ?>
 <?php endif; ?>
 
-<div class="navigation_group">
+<div class="paginado">
 	<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
 	<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
 </div>
