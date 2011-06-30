@@ -26,8 +26,8 @@
 <?php endif; ?>
 
 <div class="paginado">
-	<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-	<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+	<div class="alignleft"><?php next_posts_link('&laquo; Atrás') ?></div>
+	<div class="alignright"><?php previous_posts_link('Adelante &raquo;') ?></div>
 </div>
 
 	<!-- #footer -->
