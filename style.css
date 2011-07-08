@@ -290,6 +290,10 @@ font-size:11px;
 
 /* Comments */
 
+#comentarios {
+	padding: 0 15px;
+	}
+
 .gravatar{
 float:left;
 padding:2px;
@@ -320,7 +324,7 @@ border:1px solid #222;
 
 input, textarea, select, button{
 background:#fafafa;
-border:1px solid #efefef;
+border:1px solid #8e7a5b;
 color:#666;
 padding:2px;
 margin:3px 0 5px 0;
