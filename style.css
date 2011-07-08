@@ -86,14 +86,14 @@ list-style:square;
 
 h1{
 font-size:43px;
-color:#888;
-font-family:"Helvetica 65 Medium", Helvetica, sans-serif;
+color:#8E7A5B;
+font-family:"Ubuntu", Calibri, Helvetica, sans-serif;
 text-align:center;
 text-transform:lowercase;
 }
 
 h1 a, h1 a:hover{
-color:#888;
+color:#8E7A5B;
 text-decoration:none;
 }
 
@@ -122,7 +122,7 @@ color:#000;
 h4{
 text-align:center;
 font-size:12px;
-color:#000;
+color:#8E7A5B;
 }
 
 
