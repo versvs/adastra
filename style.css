@@ -16,7 +16,8 @@ Para WordPress 3.1+ :)
 
 #wrapper {
 	margin: 0 auto;
-	width: 650px;
+	min-width: 650px;
+	max-width: 913px;
 }
 
 #header {
