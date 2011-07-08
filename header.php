@@ -22,7 +22,7 @@
 <ul class="nav">
 <li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a></li>
 <?php wp_list_pages('title_li=' . __('') . '' ); ?>
-<li><a href="<?php bloginfo('rss2_url'); ?>">RSS Feed</a></li>
+<li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
 </ul>
 </div>
 </div>
