@@ -320,7 +320,7 @@ border:1px solid #222;
 }
 
 
-/* Forms */
+/* Formularios */
 
 input, textarea, select, button{
 background:#fafafa;
@@ -335,7 +335,15 @@ input:focus{
 border:1px solid #555;
 }
 
-/* Footer */
+/* Más formularios - Formulario Comment */
+
+textarea#comment {
+	width: 85%;
+	}
+	
+input#
+
+/* Pie */
 
 #footer {
 	font-size:9px;
