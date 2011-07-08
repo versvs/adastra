@@ -55,7 +55,8 @@ text-decoration:none;
 }
 
 a:hover{
-color:#666;
+color: #e6e2c5;
+background-color: #8e7a5b;
 text-decoration:none;
 }
 
@@ -119,6 +120,7 @@ text-decoration:none;
 
 h2 a:hover{
 color:#c00;
+background-color: #e6e2c5;
 }
 
 h3{
@@ -342,6 +344,7 @@ color:#999999;
 
 #footer a:hover{
 color:#777;
+background-color: #e6e2c5;
 }
 
 
