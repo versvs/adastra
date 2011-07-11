@@ -287,8 +287,12 @@ font-size:11px;
 .paginado a {
 	text-transform: uppercase;
 	color: #8E7A5B;
+	padding: 5px;
 	}
-	
+
+.paginado a:hover {
+	color: #e6e2c5;
+	}
 
 /* Comments */
 
