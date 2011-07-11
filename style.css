@@ -300,10 +300,11 @@ float:left;
 padding:2px;
 border:1px solid #999;
 margin:5px;
+width: 64px;
+height: 64px;
 }
 
-.gravatar:hover{
-padding:2px;
+.avatar:hover{
 border:1px solid #444;
 }
 
@@ -311,11 +312,39 @@ border:1px solid #444;
 color:#777;
 }
 
+.listacomentarios {
+	}
+	
+.listapings {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #999;
+	}
+	
+.comment-body {
+	padding: 6px 0;
+	}
+	
+
+/* COMIENZO ocultamos tanto la etiqueta al lado del formulario
+como la lista de etiquetas permitidas
+en el comentario */
+
+#commentform label {
+	display: none;
+	}
+
+.form-allowed-tags {
+	display: none;
+	}
+/* FIN ocultamos */	
+	
+
 ol#comments{
 text-align:justify;
 }
 
-.gravatar{
+.avatar{
 float:right;
 border:1px solid #222;
 }
