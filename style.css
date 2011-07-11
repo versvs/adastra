@@ -51,7 +51,7 @@ margin:0;
 }
 
 a{
-color:#110;
+color: #8e7a5b;
 text-decoration:none;
 }
 
@@ -62,8 +62,10 @@ text-decoration:none;
 }
 
 blockquote {
-padding:0 0 0 20px;
-color:#000;
+padding: 10px 10px;
+background: #f0f0f0;
+border-left: 3px solid #8e7a5b;
+color:#777;
 }
 
 blockquote a{
@@ -230,11 +232,12 @@ text-decoration:none;
 	padding: 10px 0;
 	text-align:justify;
 	font: 16px Courier;
+	color: #000;
 }
 
 .main p{
 line-height:18px;
-margin:0 0 15px 0;
+margin:0 0 0px 0;
 }
 
 .main ol{
@@ -257,11 +260,12 @@ padding:5px;
 border:1px solid #999;
 }
 
+/*
 .main img:hover{
 padding:5px;
 border:1px solid #444;
 background:#666;
-}
+} */
 
 img.wp-smiley{
 padding:0px;
