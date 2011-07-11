@@ -62,11 +62,15 @@ text-decoration:none;
 }
 
 blockquote {
-padding: 10px 10px;
+padding: 10px 10px 10px 10px;
 background: #f0f0f0;
 border-left: 3px solid #8e7a5b;
 color:#777;
 }
+
+blockquote p {
+	margin: 0;
+	}
 
 blockquote a{
 color:#999;
@@ -235,8 +239,8 @@ text-decoration:none;
 }
 
 .main p{
-line-height:18px;
-margin:0 0 0px 0;
+	line-height:18px;
+	/* margin:0 0 15px 0; */
 }
 
 .main ol{
@@ -255,8 +259,9 @@ margin:0 0 5px 0;
 
 
 .main img{
-padding:5px;
-border:1px solid #999;
+	padding:5px;
+	border:1px solid #999;
+	margin-bottom: 15px;
 }
 
 img.wp-smiley{
