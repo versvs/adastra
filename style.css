@@ -39,6 +39,32 @@ Para WordPress 3.2.* :)
 	background: #e6e2c5;
 	border: 2px solid #8E7A5B;
 	}
+
+#subfooter {
+	width: 100%;
+	margin-top: 103px;
+	min-height: 600px;
+	}
+	
+#subfooter-wrapper {
+	background: #e6e2c5;
+	margin: 0 auto;
+	width:900px;
+	clear:both;
+	}
+
+#subfooter .widget {
+	margin-top: 20px;
+	min-height: 270px;
+	width:290px;
+	float:left;
+	}
+
+#subfooter .widget .interior {
+	padding: 10px;
+	}
+
+
 	
 	
 
@@ -450,6 +476,37 @@ color:#999999;
 color:#777;
 background-color: #e6e2c5;
 }
+
+/* subpie */
+
+#subfooter {
+	background: #e6e2c5;
+	}
+
+#subfooter li {
+	list-style-type: none;
+	list-style-image: none;
+	}
+    
+#subfooter li ul {
+	padding-left:0px;
+	font-size:12px;
+	}
+     
+#subfooter a {
+    padding:5px;
+    width:90%;
+    text-decoration:none;
+    clear:both;
+    display:block;
+    }
+     
+#subfooter a:hover {
+	background-color:#8E7A5B;
+	color:#e6e2c5;
+	}
+
+
 
 
 
