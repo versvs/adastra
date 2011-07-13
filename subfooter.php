@@ -24,9 +24,7 @@
 			<?php endif; ?>
 		</div>
 	</div>
-
 </div>
-&nbsp;
 </div>
 
 

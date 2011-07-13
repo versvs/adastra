@@ -63,6 +63,7 @@ Para WordPress 3.2.* :)
 #subfooter .widget .interior {
 	padding: 10px;
 	}
+	
 
 
 	
@@ -506,6 +507,9 @@ background-color: #e6e2c5;
 	color:#e6e2c5;
 	}
 
+#subfooter .widget_tag_cloud a { 
+	display: inline;
+}
 
 
 
