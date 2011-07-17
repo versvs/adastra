@@ -9,9 +9,4 @@
     register_sidebar(array('name'=>'subfooterizquierda'));
     register_sidebar(array('name'=>'subfootercentro'));
     register_sidebar(array('name'=>'subfooterderecha'));
-
-
-
 ?>
-
-
