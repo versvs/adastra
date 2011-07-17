@@ -11,7 +11,7 @@
 	</div>
 	
 <div class="main">
-	<?php the_content('Read more...?'); ?>
+	<?php the_content('+ Leer el artículo completo'); ?>
 </div>
 
 
@@ -27,4 +27,11 @@
 	<!-- /#footer -->
 	
 <!-- /#contenido -->
+</div>
+
+
+<div id="subfooter">
+
+	<?php include('subfooter.php'); ?>
+
 </div>

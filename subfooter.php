@@ -1,5 +1,5 @@
 
-<div id="subfooter">
+
 <div id="subfooter-wrapper">
    <div class="widget">
 		<div class="interior">
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 </div>
-</div>
+
 
 
 

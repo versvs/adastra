@@ -9,11 +9,11 @@
 	<div class="titulofecha">
 			<h2 class="titulo" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<span class="fecha"><?php the_time('Y-m-d'); ?> <?php _e("@"); ?> <?php the_time('H:i'); ?></span>
-			<span class="meta">Published by <a href="mailto:<?php echo antispambot(get_the_author_email()); ?>"><?php the_author(); ?></a>. Filled under: <?php the_category(',') ?> <?php the_tags('Tags: ', ', ', ''); ?> &bull; <?php comments_popup_link('No Comments','1 Comment','% Comments'); ?> <?php edit_post_link(' &mdash; (Edit this?)'); ?></span>
+			<span class="meta">Publicado por <a href="mailto:<?php echo antispambot(get_the_author_url()); ?>"><?php the_author(); ?></a>. Archivado en: <?php the_category(',') ?>. Etiquetado como: <?php the_tags('Tags: ', ', ', ''); ?> &bull; <?php comments_popup_link('Aún no hay comentarios','1 comentario','% comentarios'); ?> <?php edit_post_link(' &mdash; (¿Editar?)'); ?></span>
 	</div>
 	
 <div class="main">
-	<?php the_content('Read more...?'); ?>
+	<?php the_content('+ Leer el artículo completo'); ?>
 </div>
 
 
@@ -38,6 +38,8 @@
 </div>
 
 
-<?php include('subfooter.php'); ?>
+<div id="subfooter">
 
-    
+	<?php include('subfooter.php'); ?>
+
+</div>
