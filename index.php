@@ -9,7 +9,7 @@
 	<div class="titulofecha">
 			<h2 class="titulo" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<span class="fecha"><?php the_time('Y-m-d'); ?> <?php _e("@"); ?> <?php the_time('H:i'); ?></span>
-			<span class="meta">Publicado por <a href="mailto:<?php echo antispambot(get_the_author_url()); ?>"><?php the_author(); ?></a>. Archivado en: <?php the_category(',') ?>. <?php the_tags('Etiquetado como: ', ', ', ''); ?> &bull; <?php comments_popup_link('Aún no hay comentarios','1 comentario','% comentarios'); ?> <?php edit_post_link(' &mdash; (¿Editar?)'); ?></span>
+			<span class="meta">Publicado por <a href="<?php get_the_author_url(); ?>"><?php the_author(); ?></a>. Archivado en: <?php the_category(',') ?>. <?php the_tags('Etiquetado como: ', ', ', ''); ?> &bull; <?php comments_popup_link('Aún no hay comentarios','1 comentario','% comentarios'); ?> <?php edit_post_link(' &mdash; (¿Editar?)'); ?></span>
 	</div>
 	
 <div class="main">
