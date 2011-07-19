@@ -381,7 +381,16 @@ como la lista de etiquetas permitidas
 también ocultamos el botón de responder con comentarios a los pingbacks
 en el comentario */
 
-#commentform label {
+#commentform p label {
+	display: block;
+	width: 120px;
+	}
+
+#commentform .required {
+	display: none;
+	}
+
+#commentform .comment-form-comment label {
 	display: none;
 	}
 
