@@ -21,7 +21,7 @@ Para WordPress 3.2.* :)
 }
 
 #header {
-	margin: 15px 0px;
+	margin: 15px 0;
 	background: #e6e2c5;
 	border: 2px solid #8E7A5B;
 	}
