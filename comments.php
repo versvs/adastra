@@ -23,7 +23,7 @@
 	<?php if ( have_comments() ) : ?>
 		<h2 id="comments-title">
 			<?php
-				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number() ),
+				printf( _n( 'Una idea sobre &ldquo;%2$s&rdquo;', '%1$s ideas sobre &ldquo;%2$s&rdquo;', get_comments_number() ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
@@ -31,8 +31,8 @@
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above">
 			<h1 class="assistive-text"><?php _e( 'Comment navigation' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;' ) ); ?></div>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios anteriores' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Comentarios más recientes &rarr;' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -54,8 +54,8 @@
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
 			<h1 class="assistive-text"><?php _e( 'Comment navigation' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;' ) ); ?></div>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios anteriores' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Comentarios más recientes &rarr;' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -65,7 +65,7 @@
 		 */
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="nocomments"><?php _e( 'Comments are closed.' ); ?></p>
+		<p class="nocomments"><?php _e( 'Los comentarios están cerrados.' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
