@@ -217,7 +217,7 @@ text-decoration:none;
 	margin-top: 3px;	
 	margin-right: 20px;
 	width: 50px;
-   -moz-transition-duration: 400ms;
+   -moz-transition-duration: 800ms;
    -moz-transition-property: width, background;
    -moz-transition-timing-function: ease;	
 	}
