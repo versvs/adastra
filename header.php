@@ -17,7 +17,7 @@
 <div id="wrapper">
 <div id="header">
 
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+<?php include (TEMPLATEPATH . '/searchform.php'); ?>		
 
 	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 	<h4><?php bloginfo('description'); ?></h4>
@@ -28,4 +28,5 @@
 				<li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
 			</ul>
 		</div>
+
 </div>

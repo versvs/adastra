@@ -40,7 +40,7 @@ Para WordPress 3.2.* :)
 	border: 2px solid #8E7A5B;
 	}
 
-#subfooter {
+ºubfooter {
 	position: relative;
 	top: 103px;
 	width: 100%;
@@ -68,7 +68,7 @@ Para WordPress 3.2.* :)
 	
 
 
-	
+/* estilos */	
 	
 
 body{
@@ -209,8 +209,26 @@ background-color: #8E7A5B;
 text-decoration:none;
 }
 
+/* Caja de búsqueda */
 
+#s {
+	float: right;
+	position: relative;
+	margin-top: 3px;	
+	margin-right: 20px;
+	width: 50px;
+   -moz-transition-duration: 400ms;
+   -moz-transition-property: width, background;
+   -moz-transition-timing-function: ease;	
+	}
+	
+#s:focus {
+	width: 170px;
+	}
 
+#header #searchsubmit {
+	display: none;
+	}
 
 
 /* Posts */
