@@ -16,13 +16,16 @@
 <body>
 <div id="wrapper">
 <div id="header">
-<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-<h4><?php bloginfo('description'); ?></h4>
-<div id="nav">
-<ul class="nav">
-<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a></li>
-<?php wp_list_pages('title_li=' . __('') . '' ); ?>
-<li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
-</ul>
-</div>
+
+<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+
+	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+	<h4><?php bloginfo('description'); ?></h4>
+		<div id="nav">
+			<ul class="nav">
+				<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a></li>
+				<?php wp_list_pages('title_li=' . __('') . '' ); ?>
+				<li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
+			</ul>
+		</div>
 </div>
