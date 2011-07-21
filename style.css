@@ -1,7 +1,7 @@
 /*
 Theme Name: Ad Astra
 Theme URI: http://www.versvs.net/
-Version: 0.9.7
+Version: 0.9.8
 Description: AdAstra es un tema sencillo, con una única columna diseñado para ser ligero. Contiene 3 áreas para widgets en la zona del pie. 
 Author: <a href="http://www.versvs.net">Jose Alcántara</a>
 Tags: brown, one-column, fixed-width, light, widget
@@ -217,9 +217,22 @@ text-decoration:none;
 	margin-top: 3px;	
 	margin-right: 20px;
 	width: 50px;
-   -moz-transition-duration: 800ms;
-   -moz-transition-property: width, background;
-   -moz-transition-timing-function: ease;	
+	/* Firefox */
+	-moz-transition-duration: 800ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	/* Chromium */	
+	-webkit-transition-duration: 800ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	/* Opera */	
+	-o-transition-duration: 800ms;
+	-o-transition-property: width, background;
+	-o-transition-timing-function: ease;
+	/* Standard */ /* IE juajua */	
+	transition-duration: 800ms;
+	transition-property: width, background;
+	transition-timing-function: ease;	
 	}
 	
 #s:focus {
