@@ -273,7 +273,7 @@ text-decoration:none;
 
 
 
-#header #searchsubmit {
+#header #searchsubmit, #header #busqueda label {
 	display: none;
 	}
 

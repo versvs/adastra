@@ -41,9 +41,11 @@
 <div id="wrapper">
 <div id="header">
 
-	<div id="busqueda"
-		<?php include (TEMPLATEPATH . '/searchform.php'); ?>		
+	<div id="busqueda">
+		<?php get_search_form(); ?>
 	</div>
+	
+
 
 	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 	<h4><?php bloginfo('description'); ?></h4>
