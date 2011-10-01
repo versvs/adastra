@@ -110,10 +110,10 @@ font-size:inherit;
 font-style:normal;
 }
 
-code{
-background:#efefef;
-color:#000;
-}
+code {
+	background:#efefef;
+	color:#000;
+	}
 
 ul{
 list-style:square;
