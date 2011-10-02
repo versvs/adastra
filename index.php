@@ -38,7 +38,7 @@
 </div>
 
 
-<div id="subfooter">
+<div id="subfooter" class="clearfix">
 
 	<?php include('subfooter.php'); ?>
 
