@@ -78,7 +78,7 @@ Para WordPress 3.2.* :)
 	
 
 body{
-background-color:#ccc3b5;
+background:#ccc3b5 url(imagenes/textura.png) repeat 0 0;
 color:#8E7A5B;
 font:11px "Ubuntu", "Liberation Sans", Verdana, Arial, Helvetica, sans-serif;
 padding:0;
