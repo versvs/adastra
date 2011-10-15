@@ -24,13 +24,19 @@ Para WordPress 3.2.* :)
 	margin: 15px 0;
 	background: #e6e2c5;
 	border: 2px solid #8E7A5B;
+	-moz-box-shadow: 0 0 2px 2px #8E7A5B; /* Firefox */
+	-webkit-box-shadow: 0 0 2px 2px #8E7A5B; /* Safari, Chrome */
+	box-shadow: 0 0 2px 2px #8E7A5B; /* Para cuando se cumplan los estándares */
 	}
 
 #contenido {
 	margin: 15px 0px;
 	padding-bottom: 20px;
 	background: #e6e2c5;
-   	border: 2px solid #8E7A5B;
+  	border: 2px solid #8E7A5B;
+	-moz-box-shadow: 0 0 2px 2px #8E7A5B; /* Firefox */
+	-webkit-box-shadow: 0 0 2px 2px #8E7A5B; /* Safari, Chrome */
+	box-shadow: 0 0 2px 2px #8E7A5B; /* Para cuando se cumplan los estándares */
 	}
 	
 #footer {
@@ -38,6 +44,9 @@ Para WordPress 3.2.* :)
 	padding: 10px;
 	background: #e6e2c5;
 	border: 2px solid #8E7A5B;
+	-moz-box-shadow: 0 0 2px 2px #8E7A5B; /* Firefox */
+	-webkit-box-shadow: 0 0 2px 2px #8E7A5B; /* Safari, Chrome */
+	box-shadow: 0 0 2px 2px #8E7A5B; /* Para cuando se cumplan los estándares */
 	}
 
 #subfooter {
@@ -226,6 +235,7 @@ text-decoration:none;
 ul.nav li a:hover {
 color:#e6e2c5;
 background-color: #8E7A5B; 
+border: 1px solid #8e7a5b;
 text-decoration:none;
 }
 
