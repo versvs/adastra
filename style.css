@@ -364,14 +364,15 @@ margin:0 0 15px 30px;
 }
 
 .main li{
-margin:0 0 5px 0;
+	margin:0 0 5px 0;
 }
 
 
 .main img{
-	padding:5px;
-	border:1px solid #999;
+	padding: 5px;
+	border: 1px solid #999;
 	margin-bottom: 15px;
+	max-width: 90%;
 }
 
 img.wp-smiley{
