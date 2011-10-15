@@ -18,7 +18,7 @@
 ?>
 
 <!-- You can start editing here. -->
-<div id="comentarios">
+<div id="comments">
 
 	<?php if ( have_comments() ) : ?>
 		<h2 id="comments-title">
