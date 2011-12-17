@@ -374,6 +374,8 @@ margin:0 0 15px 30px;
 	border: 1px solid #999;
 	margin-bottom: 15px;
 	max-width: 90%;
+	display: block;
+	margin: 0 auto 15px auto;
 }
 
 img.wp-smiley{
