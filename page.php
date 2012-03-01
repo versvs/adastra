@@ -31,7 +31,7 @@
 </div>
 
 
-<div id="subfooter">
+<div id="subfooter" class="clearfix">
 
 	<?php get_template_part('subfooter'); ?>
 
