@@ -706,3 +706,27 @@ div.aligncenter {
    margin: 0;
 }
 
+/*
+ * Página de error
+ */
+#recientes,
+#comentados {
+	display: inline-block;
+	width: 40%;
+	margin: 20px 0;
+	padding: 30px;
+	border: 1px solid #444;
+	min-height: 250px;
+	font-size: 15px;
+	line-height: 16px;
+	background: #f7f3d6;
+	}
+
+#comentados {
+	float: right;
+	}
+
+#recientes li,
+#comentados li {
+	margin: 6px 0;
+	}
