@@ -38,8 +38,4 @@
 </div>
 
 
-<div id="subfooter" class="clearfix">
-
-	<?php include('subfooter.php'); ?>
-
-</div>
+<?php get_template_part('subfooter'); ?>
