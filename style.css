@@ -240,7 +240,7 @@ border: 1px solid #8e7a5b;
 text-decoration:none;
 }
 
-/* Caja de búsqueda */
+/* Caja de búsqueda Resto de la página */
 
 #busqueda {
 	position: relative;
@@ -252,6 +252,59 @@ text-decoration:none;
 	}
 
 #s {
+	background: url("imagenes/lupa-buscar.png") no-repeat scroll 9px center #edeacc;
+	position: relative;
+	margin: 20px auto;	
+	height: 20px;
+	padding: 7px;
+	padding-left: 28px;
+	font-size: 0px;
+	width: 200px;
+	/* Firefox */
+	-moz-transition-duration: 800ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	/* Chromium */	
+	-webkit-transition-duration: 800ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	/* Opera */	
+	-o-transition-duration: 800ms;
+	-o-transition-property: width, background;
+	-o-transition-timing-function: ease;
+	/* Standard */ /* IE juajua */	
+	transition-duration: 800ms;
+	transition-property: width, background;
+	transition-timing-function: ease;	
+	}
+	
+#s:focus {
+	width: 470px;
+	font-size: 12px;
+	background-color: #ffffff;
+	}
+
+
+#searchsubmit,
+#busqueda label {
+	display: none;
+	}
+
+
+
+
+/* Caja de búsqueda Header */
+
+#header #busqueda {
+	position: relative;
+	width: 300px;
+	vertical-align: middle;
+	float: right;
+	margin-top: 44px;
+	margin-right: 30px;
+	}
+
+#header #s {
 	background: url("imagenes/lupa-buscar.png") no-repeat scroll 9px center #edeacc;
 	float: right;
 	position: relative;
@@ -280,19 +333,18 @@ text-decoration:none;
 	transition-timing-function: ease;	
 	}
 	
-#s:focus {
+#header #s:focus {
 	width: 170px;
 	font-size: 12px;
 	background-color: #ffffff;
 	}
 
 
-
-
-
-#header #searchsubmit, #header #busqueda label {
+#header #searchsubmit,
+#header #busqueda label {
 	display: none;
 	}
+
 
 
 /* Posts */
