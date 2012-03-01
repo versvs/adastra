@@ -25,10 +25,7 @@
 <?php get_template_part('404'); ?>
 <?php endif; ?>
 
-<div class="paginado">
-	<div class="alignleft"><?php next_posts_link('&laquo; Atrás') ?></div>
-	<div class="alignright"><?php previous_posts_link('Adelante &raquo;') ?></div>
-</div>
+<?php get_template_part('paginado'); ?>
 
 	<!-- #footer -->
     <?php get_footer(); ?>
