@@ -65,6 +65,16 @@ html {
 }
 
 
+.container {
+	padding: 20px 0;
+	}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	}
+
+
 /**
   requisitos para adaptarnos al estandar
   http://codex.wordpress.org/CSS
@@ -189,13 +199,7 @@ h4 {
 
 /* Estructura */
 
-#wrapper {
-	margin: 0 auto;
-	min-width: 650px;
-}
-
-#header {
-	margin: 15px 0;
+.header {
 	background: #e6e2c5;
 	border: 2px solid #8E7A5B;
 	-moz-box-shadow: 0 0 2px 2px #8E7A5B; /* Firefox */
@@ -203,10 +207,8 @@ h4 {
 	box-shadow: 0 0 2px 2px #8E7A5B; /* Para cuando se cumplan los estándares */
 	}
 
-#contenido {
+.contenido {
 	width: 600px;
-	margin: 15px 0px;	
-	padding: 15px 30px 30px 30px;
 	background: #e6e2c5;
   	border: 2px solid #8E7A5B;
 	-moz-box-shadow: 0 0 2px 2px #8E7A5B; /* Firefox */
@@ -215,10 +217,10 @@ h4 {
 	}
 
 .main-sidebar {
-	width: 300px;
+	width: 200px;
 	}
 	
-#footer {
+.footer {
 	margin: 30px 0;
 	padding: 10px;
 	background: #e6e2c5;
