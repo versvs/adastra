@@ -12,6 +12,84 @@ Para WordPress 3.3.* :)
 */
 
 
+/* ================ */
+/* = La rejilla = */   /* 12 columnas de 60 pixels con 20px para respirar */
+/* ================ */
+
+.grid_1 { width:60px; }
+.grid_2 { width:140px; }
+.grid_3 { width:220px; }
+.grid_4 { width:300px; }
+.grid_5 { width:380px; }
+.grid_6 { width:460px; }
+.grid_7 { width:540px; }
+.grid_8 { width:620px; }
+.grid_9 { width:700px; }
+.grid_10 { width:780px; }
+.grid_11 { width:860px; }
+.grid_12 { width:940px; }
+
+.columna {
+	margin: 0px;
+	overflow: hidden;
+	float: left;
+	display: inline;
+	padding: 10px;
+	}
+
+.fila {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.fila .fila {
+	margin: 0 -10px;
+	width: auto;
+	display: inline-block;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.hidden {
+	content: " ";
+	}
+	
+html {
+  overflow-y: scroll;
+}
+
+
+/**
+  requisitos para adaptarnos al estandar
+  http://codex.wordpress.org/CSS
+*/
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
+
+
+
+
+
+
 /* Estructura */
 
 #wrapper {
