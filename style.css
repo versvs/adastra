@@ -207,28 +207,18 @@ h4 {
 	}
 	
 .footer {
-	margin: 30px 0;
 	padding: 10px;
-	background: #e6e2c5;
-	border: 2px solid #8E7A5B;
-	-moz-box-shadow: 0 0 2px 2px #8E7A5B; /* Firefox */
-	-webkit-box-shadow: 0 0 2px 2px #8E7A5B; /* Safari, Chrome */
-	box-shadow: 0 0 2px 2px #8E7A5B; /* Para cuando se cumplan los estándares */
 	}
 
 #subfooter {
 	position: relative;
 	top: 103px;
 	width: 100%;
-	min-height: 600px;
 	border-top: 1px solid #8e7a5b;
 	}
 	
 #subfooter-wrapper {
 	background: #e6e2c5;
-	margin: 0 auto;
-	width:900px;
-	clear:both;
 	}
 
 #subfooter .widget {
