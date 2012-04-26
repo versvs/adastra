@@ -39,22 +39,26 @@
 </head>
 <body>
 
-<div id="wrapper">
-
-<div id="header">
-
-	<div id="busqueda">
-		<?php get_search_form(); ?>
-	</div>
+<div id="header-container" class="container clearfix">
+	<div id="header-wrapper" class="header wrapper clearfix">
+		<div id="busqueda">
+			<?php get_search_form(); ?>
+		</div>
 	
-
-
-	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-	<h4><?php bloginfo('description'); ?></h4>
+		<a href="<?php bloginfo('url'); ?>">
+			<h1>
+				<?php bloginfo('name'); ?>
+			</h1>
+		</a>
+		<h4>
+			<?php bloginfo('description'); ?>
+		</h4>
+		
 		<div id="nav">
 			<ul class="nav">
 				<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
 			</ul>
 		</div>
+	</div> <!-- /#header-wrapper -->
+</div> <!-- /#header-container -->
 
-</div>

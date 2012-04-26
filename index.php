@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<div id="main" class="main clearfix"> <!-- #main -->
+<div id="main-container" class="main container clearfix">
+
+<div id="main-wrapper" class="main wrapper clearfix"> <!-- #main -->
 
 <div id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
 
@@ -79,7 +81,9 @@
 <?php get_template_part('sidebar'); ?>
 
 
-</div> <!-- /#main -->
+</div> <!-- /#main-wrapper -->
+</div> <!-- /#main-container -->
+
 
 	<!-- #footer -->
     <?php get_footer(); ?>

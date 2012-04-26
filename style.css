@@ -192,7 +192,6 @@ h4 {
 #wrapper {
 	margin: 0 auto;
 	min-width: 650px;
-	max-width: 913px;
 }
 
 #header {
@@ -205,6 +204,7 @@ h4 {
 	}
 
 #contenido {
+	width: 600px;
 	margin: 15px 0px;	
 	padding: 15px 30px 30px 30px;
 	background: #e6e2c5;
@@ -212,6 +212,10 @@ h4 {
 	-moz-box-shadow: 0 0 2px 2px #8E7A5B; /* Firefox */
 	-webkit-box-shadow: 0 0 2px 2px #8E7A5B; /* Safari, Chrome */
 	box-shadow: 0 0 2px 2px #8E7A5B; /* Para cuando se cumplan los estándares */
+	}
+
+.main-sidebar {
+	width: 300px;
 	}
 	
 #footer {
