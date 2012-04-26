@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
-<!-- #contenido -->
-<div id="main" class="clearfix">
+<div id="main" class="main clearfix"> <!-- #main -->
 
-<div id="contenido" class="contenido clearfix">
+<div id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
 
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
