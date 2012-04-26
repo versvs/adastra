@@ -61,8 +61,10 @@
 				<?php the_tags('Etiquetas: ', ', ', ''); ?>
 			</div>
    	</div>
-	<?php endwhile; ?>
+    
+   	<?php if ( comments_open() ) comments_template(); ?>
 	
+	<?php endwhile; ?>
 <?php else: ?>
 	<?php get_template_part('404'); ?>
 <?php endif; ?>
