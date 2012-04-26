@@ -79,9 +79,8 @@
 <!-- /#contenido -->
 </div>
 
-<div id="sidebar" class="clearfix">
-	<?php get_template_part('sidebar'); ?>
-</div>
+
+<?php get_template_part('sidebar'); ?>
 
 
 </div> <!-- /#main -->
