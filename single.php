@@ -62,7 +62,7 @@
 			</div>
    	</div>
     
-   	<?php if ( comments_open() ) comments_template(); ?>
+   	<?php comments_template(); ?>
 	
 	<?php endwhile; ?>
 <?php else: ?>

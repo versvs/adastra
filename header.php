@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
 <title><?php
 	/*
@@ -38,7 +38,9 @@
 <?php wp_head(); ?>
 </head>
 <body>
+
 <div id="wrapper">
+
 <div id="header">
 
 	<div id="busqueda">
@@ -51,9 +53,7 @@
 	<h4><?php bloginfo('description'); ?></h4>
 		<div id="nav">
 			<ul class="nav">
-				<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Home</a></li>
-				<?php wp_list_pages('title_li=' . __('') . '' ); ?>
-				<li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
+				<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
 			</ul>
 		</div>
 

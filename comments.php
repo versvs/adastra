@@ -6,7 +6,7 @@
 		if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it doesn't match the cookie
 			?>
 
-			<p class="nocomments">Este post está protegido con contraseña. Introduce la contraseña para ver los comentarios.</p>
+			<p class="nocomments">Este post est&aacute; protegido con contrase&ntilde;a. Introduce la contrase&ntilde;a para ver los comentarios.</p>
 
 			<?php
 			return;
@@ -65,7 +65,7 @@
 		 */
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="nocomments"><?php _e( 'Los comentarios están cerrados.' ); ?></p>
+		<p class="nocomments"><?php _e( 'Los comentarios est&aacute;n cerrados.' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
