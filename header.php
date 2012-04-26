@@ -39,12 +39,11 @@
 </head>
 <body>
 
-<div id="cintilla-container" class="container clearfix">
-	<div id="cintilla-wrapper" class="wrapper clearfix">
-		<?php wp_nav_menu( array( 'theme_location' => 'cintilla' ) ); ?>
+<div id="nav-container" class="nav container clearfix">
+	<div id="nav" class="wrapper clearfix">
+			<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
 	</div>
 </div>
-
 
 <div id="header-container" class="container clearfix">
 	<div id="header-wrapper" class="header wrapper clearfix">
@@ -61,12 +60,6 @@
 			<h4>
 				<?php bloginfo('description'); ?>
 			</h4>
-		</div>
-		
-		<div id="nav">
-			<ul class="nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
-			</ul>
 		</div>
 	</div> <!-- /#header-wrapper -->
 </div> <!-- /#header-container -->
