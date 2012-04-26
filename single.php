@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- #contenido -->
-<div id="contenido" class="clearfix">
+<div id="principal" class="clearfix">
 
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
@@ -71,13 +71,19 @@
 
 
 <?php get_template_part('paginado'); ?>
-
-	<!-- #footer -->
-    <?php get_footer(); ?>
-	<!-- /#footer -->
 	
 <!-- /#contenido -->
 </div>
 
+<div id="sidebar" class="clearfix">
+	<?php get_template_part('sidebar'); ?>
+</div>
+
+
+</div> <!-- /#main -->
+
+	<!-- #footer -->
+    <?php get_footer(); ?>
+	<!-- /#footer -->
 
 <?php get_template_part('subfooter'); ?>

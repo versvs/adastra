@@ -55,7 +55,7 @@
 		<nav id="comment-nav-below">
 			<h1 class="assistive-text"><?php _e( 'Comment navigation' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios anteriores' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Comentarios más recientes &rarr;' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Comentarios recientes &rarr;' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
