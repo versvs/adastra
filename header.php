@@ -40,9 +40,9 @@
 <body>
 
 <div id="cintilla-container" class="container clearfix">
-	<ul class="cintilla-wrapper" class="wrapper clearfix">
+	<div id="cintilla-wrapper" class="wrapper clearfix">
 		<?php wp_nav_menu( array( 'theme_location' => 'cintilla' ) ); ?>
-	</ul>
+	</div>
 </div>
 
 

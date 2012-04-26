@@ -240,26 +240,27 @@ h4 {
 #subfooter .widget .interior {
 	padding: 10px;
 	}
-	
-
-
-
-
-
 
 
 /* header */
-#header h1 {
-	text-align: left;
-	margin-left: 55px;
+.branding {
+	width: 400px;
+	margin-left: 20px;
 	}
 
-#header h4 {
+.branding h1 {
 	text-align: left;
-	margin-left: 65px;
-	margin-top: -30px;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+
+.branding h4 {
+	margin-top: 0;
+	text-align: left;
 	text-transform:lowercase;
 	}
+	
 
 
 /* Navigation */
