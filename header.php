@@ -39,20 +39,29 @@
 </head>
 <body>
 
+<div id="cintilla-container" class="container clearfix">
+	<ul class="cintilla-wrapper" class="wrapper clearfix">
+		<?php wp_nav_menu( array( 'theme_location' => 'cintilla' ) ); ?>
+	</ul>
+</div>
+
+
 <div id="header-container" class="container clearfix">
 	<div id="header-wrapper" class="header wrapper clearfix">
 		<div id="busqueda">
 			<?php get_search_form(); ?>
 		</div>
 	
-		<a href="<?php bloginfo('url'); ?>">
-			<h1>
-				<?php bloginfo('name'); ?>
-			</h1>
-		</a>
-		<h4>
-			<?php bloginfo('description'); ?>
-		</h4>
+		<div id="branding" class="branding">
+			<a href="<?php bloginfo('url'); ?>">
+				<h1>
+					<?php bloginfo('name'); ?>
+				</h1>
+			</a>
+			<h4>
+				<?php bloginfo('description'); ?>
+			</h4>
+		</div>
 		
 		<div id="nav">
 			<ul class="nav">
