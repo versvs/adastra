@@ -13,7 +13,7 @@ Para WordPress 3.3.* :)
 
 
 /* ================ */
-/* = La rejilla = */   /* 12 columnas de 60 pixels con 20px para respirar */
+/* = La rejilla   = */   /* 12 columnas de 60 pixels con 20px para respirar */
 /* ================ */
 
 .grid_1 { width:60px; }
@@ -74,15 +74,112 @@ div.aligncenter {
    display: block;
    margin-left: auto;
    margin-right: auto;
-}
+   }
 
 .alignleft {
    float: left;
-}
+   }
 
 .alignright {
    float: right;
+   }
+
+/**
+ * Estilos basicos del tema
+ *
+ **/	
+	
+
+body{
+	background:#e6e2c5 url(imagenes/body.png) repeat 0 0;
+	color:#8E7A5B;
+	font:15px "Ubuntu", "Calibri", sans-serif;
+	padding:0;
+	margin:0;
+	}
+
+	
+p {
+	font-size: 16px;
+	line-height: 17px;
+	color: #333;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	color: #8E7A5B;
+	}
+	
+ul,li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}	
+
+
+a,
+a:visited {
+	color: #8e7a5b;
+	text-decoration:none;
+	}
+
+a:focus,
+a:hover {
+	color: #e6e2c5;
+	background-color: #8e7a5b;
+	text-decoration:none;
+	}
+
+blockquote {
+	padding: 20px;
+	background: #f0f0f0;
+	border-left: 3px solid #8e7a5b;
+	color:#777;
+	}
+
+blockquote p {
+	margin: 0;
+	}
+
+blockquote a{
+color:#999;
 }
+
+cite{
+font-size:inherit;
+font-style:normal;
+}
+
+code {
+	background:#efefef;
+	color:#000;
+	}
+
+
+
+
+
+/* Headers */
+
+h1 {
+	font-size:47px;
+	text-transform:lowercase;
+	text-align: center;
+	}
+
+
+h2 {
+	font-size: 20px;
+	margin: 0 0 7px 0;
+	}
+
+h3 {
+	font-size:12px;
+	}
+
+h4 {
+	font-size:14px;
+	}
+
 
 
 
@@ -152,118 +249,14 @@ div.aligncenter {
 	padding: 10px;
 	}
 	
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-
-/* estilos */	
-	
-
-body{
-background:#ccc3b5 url(imagenes/adastra2.png) repeat 0 0;
-color:#8E7A5B;
-font:11px "Ubuntu", "Liberation Sans", Verdana, Arial, Helvetica, sans-serif;
-padding:0;
-margin:0;
-}
-
-a{
-color: #8e7a5b;
-text-decoration:none;
-}
-
-a:hover{
-	color: #e6e2c5;
-	background-color: #8e7a5b;
-	text-decoration:none;
-	}
-
-blockquote {
-	padding: 20px;
-	background: #f0f0f0;
-	border-left: 3px solid #8e7a5b;
-	color:#777;
-	}
-
-blockquote p {
-	margin: 0;
-	}
-
-blockquote a{
-color:#999;
-}
-
-cite{
-font-size:inherit;
-font-style:normal;
-}
-
-code {
-	background:#efefef;
-	color:#000;
-	}
-
-ul{
-list-style:square;
-}
-
-/* Headers */
-
-h1{
-	font-size:47px;
-	color:#8E7A5B;
-	font-family:"Ubuntu", Calibri, Helvetica, sans-serif;
-	text-transform:lowercase;
-	text-align: center;
-}
-
-h1 a{
-color:#8E7A5B;
-text-decoration: none;
-padding: 4px 10px;
-}
-
-h1 a:hover{
-color:#e6e2c5;
-background-color: #8E7A5B; 
-text-decoration:none;
-}
 
 
 
-h2{
-font-size: 20px;
-margin: 0 0 7px 0;
-text-align:justify;
-}
 
-h2 a{
-color:#8E7A5B;
-text-decoration:none;
-}
 
-h2 a:hover{
-color:#c00;
-background-color: #e6e2c5;
-}
 
-h3{
-text-align:justify;
-font-size:12px;
-color:#000;
-}
 
-h4{
-text-align:center;
-font-size:14px;
-color:#8E7A5B;
-}
-
+/* header */
 #header h1 {
 	text-align: left;
 	margin-left: 55px;

@@ -71,10 +71,7 @@
 
 <?php get_template_part('paginado'); ?>
 
-	<!-- #footer -->
-    <?php get_footer(); ?>
-	<!-- /#footer -->
-	
+
 <!-- /#contenido -->
 </div>
 
@@ -84,6 +81,9 @@
 
 </div> <!-- /#main -->
 
+	<!-- #footer -->
+    <?php get_footer(); ?>
+	<!-- /#footer -->
 
 
 <?php get_template_part('subfooter'); ?>
