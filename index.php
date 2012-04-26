@@ -31,19 +31,33 @@
 					</span>
 					<span class="post-autor">
 						<a href="<?php get_the_author_url(); ?>">
-							<?php the_author(); ?>
+							<?php the_author_posts_link() ?>
 						</a>
 					</span>						
 				 	<span class="post-comments">
-				 		<?php comments_popup_link('0','1','%'); ?>
+				 		<a rel="bookmark" href="<?php echo get_permalink(); ?>#comments">
+				 			<?php comments_number('0','1','%'); ?>
+				 		</a>
 				 	</span>
 			</div>
 	
-			<div class="post-content">
-				<?php the_content('Continue reading'); ?>
+			<div class="post-content clearfix">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<div class="post-thumbnail">
+						<?php the_post_thumbnail('thumbnail') ?>
+					</div>
+				<?php endif; ?>
+				
+				<?php the_excerpt(); ?>
+				
+				<span class="leer-mas alignright">
+					<a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s'), get_the_title() ) ?>">
+						<?php _e('Leer +') ?>
+					</a>
+				</span>				
 			</div>
 			
-			<div class="post-tags">
+			<div class="post-tags clearfix">
 				<?php the_tags('Etiquetas: ', ', ', ''); ?>
 			</div>
    	</div>
