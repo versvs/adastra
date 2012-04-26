@@ -22,7 +22,7 @@
 					</a>
 								
 					<span class="post-date clearfix">
-						<?php the_time('Y-m-d'); ?>
+						<?php the_date(); ?>
 						<?php _e("@"); ?>
 						<?php the_time('H:i'); ?>
 					</span>
