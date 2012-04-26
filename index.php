@@ -6,15 +6,45 @@
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 
-		<div class="post clearfix">
-			<div class="titulofecha clearfix">
-					<h2 class="titulo" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-					<span class="fecha"><?php the_time('Y-m-d'); ?> <?php _e("@"); ?> <?php the_time('H:i'); ?></span>
-					<span class="meta">Publicado por <a href="<?php get_the_author_url(); ?>"><?php the_author(); ?></a>. Archivado en: <?php the_category(',') ?>. <?php the_tags('Etiquetado como: ', ', ', ''); ?> &bull; <?php comments_popup_link('Aún no hay comentarios','1 comentario','% comentarios'); ?> <?php edit_post_link(' &mdash; (¿Editar?)'); ?></span>
+		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+			<div class="post-info clearfix">
+					<span class="category">
+						<?php the_category(' ') ?>
+					</span>
+					<span class="edit-link">
+						<?php edit_post_link('Editar'); ?>
+					</span>
+					
+					<a href="<?php the_permalink() ?>" rel="bookmark">
+						<h2 class="titulo" id="post-<?php the_ID(); ?>">
+							<?php the_title(); ?>
+						</h2>
+					</a>
+								
+					<span class="post-date clearfix">
+						<?php the_time('Y-m-d'); ?>
+						<?php _e("@"); ?>
+						<?php the_time('H:i'); ?>
+					</span>
+					<span class="bullet">
+						&bull;
+					</span>
+					<span class="post-autor">
+						<a href="<?php get_the_author_url(); ?>">
+							<?php the_author(); ?>
+						</a>
+					</span>						
+				 	<span class="post-comments">
+				 		<?php comments_popup_link('0','1','%'); ?>
+				 	</span>
 			</div>
 	
-			<div class="main">
-				<?php the_content('+ Leer el artículo completo'); ?>
+			<div class="post-content">
+				<?php the_content('Continue reading'); ?>
+			</div>
+			
+			<div class="post-tags">
+				<?php the_tags('Etiquetas: ', ', ', ''); ?>
 			</div>
    	</div>
     
