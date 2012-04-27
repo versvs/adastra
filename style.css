@@ -210,26 +210,69 @@ h4 {
 	padding: 10px;
 	}
 
-#subfooter {
-	position: relative;
-	top: 103px;
-	width: 100%;
+/**
+ *
+ * Widgets en el footer
+ */
+ 
+.footer.container {
+	background: #e6e2c5;
 	border-top: 1px solid #8e7a5b;
 	}
 	
-#subfooter-wrapper {
-	background: #e6e2c5;
+	
+.footer-wrapper {
+	margin-bottom: 20px;
 	}
 
-#subfooter .widget {
-	margin-top: 20px;
-	width:290px;
-	float:left;
+.footer .widget-area {
+	width: 250px;
+	float: left;
+	background: url(img/blanco25.png);
+	margin: 0 20px 0 0;
+	padding: 20px;
+	}
+	
+.footer .widget-area a {
+	text-decoration: none;
 	}
 
-#subfooter .widget .interior {
-	padding: 10px;
+.footer .widget-area.derecha {
+	width: 300px;
+	margin-right: 0;
 	}
+	
+.widget ul.blogroll,
+.widget ul.blogroll li {
+	list-style: square inside;
+	color: #888;
+	}
+	
+.widget ul.blogroll li a {
+	text-decoration: none;
+	margin-left: 5px;
+	padding: 1px 6px;
+	}
+
+.widget ul.blogroll li {
+	margin: 0 0 3px 0;
+	}
+
+.sub-footer {
+	padding-top: 30px;
+	background: url('img/separadorpie.png') no-repeat top center;
+	color: #fff;
+	text-align: center;
+	}
+.sub-footer a {
+	color: #ccc;
+	font-weight: bold;
+	border: 0;
+	}
+.sub-footer a:hover {
+	border-bottom: 1px dashed #ccc;
+	}
+
 
 
 /**
@@ -676,7 +719,6 @@ textarea#comment {
 
 .footer {
 	font-size:13px;
-	text-align:center;
 }
 
 .footer a{
