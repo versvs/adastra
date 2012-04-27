@@ -1,5 +1,5 @@
 <div id="footer-container" class="footer container clearfix">
-	<div id="footer-wrapper" class="footer wrapper clearfix">
+	<div id="footer-wrapper" class="footer-wrapper footer wrapper clearfix">
 		<a href="<?php bloginfo('url'); ?>">
 			<?php bloginfo('name'); ?>
 		</a>
