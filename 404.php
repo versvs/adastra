@@ -3,9 +3,7 @@
 
 <div id="main-container" class="main container clearfix">
 
-<div id="main-wrapper" class="main wrapper clearfix"> <!-- #main -->
-
-<div id="contenido" class="contenido 404 alignleft clearfix"> <!-- #contenido -->
+<div id="main-wrapper" class="main 404 wrapper clearfix"> <!-- #main -->
 
 	<div class="post clearfix">
 		<h3 style="text-align:center">
@@ -57,11 +55,7 @@
 
 
 
-<!-- /#contenido -->
-</div>
 
-
-<?php get_template_part('sidebar'); ?>
 
 
 </div> <!-- /#main-wrapper -->
