@@ -674,16 +674,16 @@ textarea#comment {
 
 /* Pie */
 
-#footer {
-	font-size:9px;
+.footer {
+	font-size:13px;
 	text-align:center;
 }
 
-#footer a{
+.footer a{
 color:#999999;
 }
 
-#footer a:hover{
+.footer a:hover{
 color:#777;
 background-color: #e6e2c5;
 }
