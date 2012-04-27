@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
-<!-- #contenido -->
-<div id="contenido">
+<div id="main-container" class="main container clearfix">
+
+<div id="main-wrapper" class="main wrapper clearfix"> <!-- #main -->
+
+<div id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
+
 
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
@@ -23,12 +27,23 @@
 <?php endif; ?>
 
 
+
+
+<!-- /#contenido -->
+</div>
+
+
+<?php get_template_part('sidebar'); ?>
+
+
+</div> <!-- /#main-wrapper -->
+</div> <!-- /#main-container -->
+
+
+
 <!-- #footer -->
 <?php get_footer(); ?>
 <!-- /#footer -->
-	
-<!-- /#contenido -->
-</div>
 
 
 
