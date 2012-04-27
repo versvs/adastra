@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 
-<div id="contenido" class="404">
+
+<div id="main-container" class="main container clearfix">
+
+<div id="main-wrapper" class="main wrapper clearfix"> <!-- #main -->
+
+<div id="contenido" class="contenido 404 alignleft clearfix"> <!-- #contenido -->
+
 	<div class="post clearfix">
 		<h3 style="text-align:center">
 			No hemos encontrado lo que buscabas.
@@ -49,11 +55,26 @@
 
 	</div>
 
-	
-	<?php get_footer(); ?>
 
 
+<!-- /#contenido -->
 </div>
+
+
+<?php get_template_part('sidebar'); ?>
+
+
+</div> <!-- /#main-wrapper -->
+</div> <!-- /#main-container -->
+
+
+	
+
+<!-- #footer -->
+<?php get_footer(); ?>
+<!-- /#footer -->
+
+
 
 
 <?php get_template_part('subfooter'); ?>
