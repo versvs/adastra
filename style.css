@@ -502,26 +502,31 @@ h4 {
 	color: #000;
 }
 
-.main p{
+.post p{
 	margin:0 0 15px 0;
 }
 
-.main blockquote p {
+.post blockquote p {
 	margin: 0;
 	}
 
 
-.main ol,
-.main ul{
+.post ol {
+	list-style: decimal outside none;
+	}
+
+.post ul{
+	list-style: circle outside none;
 	margin:0 0 15px 30px;
 	}
 
-.main li{
+.post li{
 	margin:0 0 5px 0;
 }
 
 
-.main img{
+.post img,
+.post iframe {
 	padding: 5px;
 	border: 1px solid #999;
 	margin-bottom: 15px;
