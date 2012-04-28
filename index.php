@@ -11,37 +11,39 @@
 
 		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 			<div class="post-info clearfix">
-					<span class="category">
+				 	<span class="post-comments alignright">
+				 		<a rel="bookmark" href="<?php echo get_permalink(); ?>#comments">
+				 			<?php comments_number('0','1','%'); ?>
+				 		</a>
+				 	</span>
+				 	
+					<span class="category-link">
 						<?php the_category(' ') ?>
 					</span>
 					<span class="edit-link">
 						<?php edit_post_link('Editar'); ?>
 					</span>
 					
-					<a href="<?php the_permalink() ?>" rel="bookmark">
-						<h2 class="titulo" id="post-<?php the_ID(); ?>">
+					<a class="post-title" href="<?php the_permalink() ?>" rel="bookmark">
+						<h2>
 							<?php the_title(); ?>
 						</h2>
 					</a>
-								
-					<span class="post-date clearfix">
-						<?php the_date(); ?>
-						<?php _e("@"); ?>
-						<?php the_time('H:i'); ?>
-					</span>
-					<span class="bullet">
-						&bull;
-					</span>
+					
 					<span class="post-autor">
 						<a href="<?php get_the_author_url(); ?>">
 							<?php the_author_posts_link() ?>
 						</a>
-					</span>						
-				 	<span class="post-comments">
-				 		<a rel="bookmark" href="<?php echo get_permalink(); ?>#comments">
-				 			<?php comments_number('0','1','%'); ?>
-				 		</a>
-				 	</span>
+					</span>
+						
+					<span class="post-date clearfix">
+						<a href="<?php the_permalink() ?>" rel="bookmark">
+							<?php the_date(); ?>
+							<?php _e("@"); ?>
+							<?php the_time('H:i'); ?>
+						</a>
+					</span>
+
 			</div>
 	
 			<div class="post-content clearfix">

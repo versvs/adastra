@@ -129,14 +129,16 @@ ul,li {
 
 a,
 a:visited {
-	color: #8e7a5b;
+/*	color: #8e7a5b; */
+	color: #aaa;
 	text-decoration:none;
 	}
 
 a:focus,
 a:hover {
-	color: #e6e2c5;
-	background-color: #8e7a5b;
+/*	color: #e6e2c5; */
+	color: #888;
+	border-bottom: 1px #aaa dashed;
 	text-decoration:none;
 	}
 
@@ -477,8 +479,32 @@ h4 {
 	
 .post .post-info {
 	border-bottom: 1px #aaa solid;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	color: #888;
+	}
+	
+.post .post-info .category-link a,
+.post .post-info .category-link a:visited {
+	display: inline-block;
+	padding: 3px 5px;
+   margin-bottom: 3px;
+	background: #888;
+	color: #ddd;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   border-radius: 2px;
+	}
+
+.post .post-info .category-link a:hover,
+.post .post-info .category-link a:focus {
+	border: 0;
+	}
+	
+.post-comments a {
+	background: url('imagenes/comment.png') no-repeat 0 7px;
+	padding-left: 32px;
+	display: inline-block;
+	font-size: 21px;
 	}
 
 .titulofecha {
@@ -487,15 +513,40 @@ h4 {
 	width: 100%;
 	}
 
-.titulo {
-	max-width: 63%; /* siempre garantizamos un mínimo margen */
-	font-variant: small-caps;
-	font-size: 23px;
+.post-title {
+	margin: 3px;
+	}
+
+.post-title h2 {
+	font-size: 32px;
+	}
+
+:hover.post-title {
+	border-bottom: 1px #aaa dashed;
+	}
+
+:hover.post-title h2 {
+	color: #888;
+	}
+
+
+.post-autor {
+	display: inline-block;;
+	background: url('imagenes/user.png') no-repeat;
+	padding-left: 25px;
+	margin: 0 20px 5px 0;
 	}
 	
 .post-date {
 	background: url('imagenes/calendar.png') no-repeat;
 	padding-left: 25px;
+	}
+	
+.post .post-tags {
+	display: inline-block;
+	background: url('imagenes/tag.png') no-repeat;
+	padding-left: 25px;
+	color: #888;
 	}
 	
 .meta {
@@ -521,31 +572,47 @@ h4 {
 	color: #000;
 }
 
-.post p{
+
+.post .post-content {
+	border-bottom: 1px #aaa solid;
+	margin-bottom: 10px;
+	}
+
+.post .post-content p {
 	margin:0 0 15px 0;
 }
 
-.post blockquote p {
+.post .post-content blockquote p {
 	margin: 0;
+	color: #888;
 	}
 
+.post .post-content a {
+	border-bottom: 1px #aaa solid;
+	}
+	
+.post .post-content a:hover {
+	border-bottom: 1px #888 dashed;
+	}
+	
+	
 
-.post ol li {
+.post .post-content ol li {
 	list-style: decimal outside none;
 	}
 
-.post ul li {
+.post .post-content ul li {
 	list-style: circle outside none;
 	margin:0 0 15px 30px;
 	}
 
-.post li{
+.post .post-content li {
 	margin:0 0 5px 0;
 }
 
 
-.post img,
-.post iframe {
+.post .post-content img,
+.post .post-content iframe {
 	padding: 5px;
 	border: 1px solid #999;
 	margin-bottom: 15px;
@@ -553,6 +620,7 @@ h4 {
 	display: block;
 	margin: 0 auto 15px auto;
 }
+
 
 img.wp-smiley{
 	padding:0px;
