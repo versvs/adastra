@@ -536,19 +536,19 @@ h4 {
 }
 
 img.wp-smiley{
-padding:0px;
-border:0px;
-}
+	padding:0px;
+	border:0px;
+	}
 
 img.wp-smiley:hover{
-padding:0px;
-border:0px;
-}
+	padding:0px;
+	border:0px;
+	}
 
 
 .navigation{
-font-size:11px;
-}
+	font-size:17px;
+	}
 
 
 .paginado {
