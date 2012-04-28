@@ -103,20 +103,21 @@ div.aligncenter {
 body{
 	background:#e6e2c5 url(imagenes/body.png) repeat 0 0;
 	color:#8E7A5B;
-	font:15px "Ubuntu", "Calibri", sans-serif;
+	font:17px "Delicious", "Calibri", sans-serif;
 	padding:0;
 	margin:0;
 	}
 
 	
 p {
-	font-size: 16px;
-	line-height: 17px;
+	font-size: 21px;
+	line-height: 30px;
 	color: #333;
 	}
 	
 h1, h2, h3, h4, h5, h6 {
 	color: #8E7A5B;
+	font-family: "Ubuntu", "Calibri";
 	}
 	
 ul,li {
@@ -452,7 +453,7 @@ h4 {
 
 .post {
 	background: url('imagenes/blanco25.png');
-	padding: 20px;
+	padding: 30px;
 	margin-bottom: 30px;
 	text-align: justify;
 	}
@@ -498,12 +499,10 @@ h4 {
 	padding: 10px 0;
 	margin-top: 8px;
 	text-align:justify;
-	font: 16px Courier;
 	color: #000;
 }
 
 .main p{
-	line-height:18px;
 	margin:0 0 15px 0;
 }
 
@@ -512,15 +511,10 @@ h4 {
 	}
 
 
-.main ol{
-line-height:18px;
-margin:0 0 15px 30px;
-}
-
+.main ol,
 .main ul{
-line-height:18px;
-margin:0 0 15px 30px;
-}
+	margin:0 0 15px 30px;
+	}
 
 .main li{
 	margin:0 0 5px 0;
@@ -719,7 +713,7 @@ textarea#comment {
 /* Pie */
 
 .footer {
-	font-size:13px;
+	font-size:17px;
 }
 
 .footer a{
