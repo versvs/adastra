@@ -198,16 +198,31 @@ h4 {
 .contenido {
 	width: 100%;
 	max-width: 620px;
+	min-width: 350px;
 	margin-right: 30px;
 	}
 
 .main-sidebar {
-	width: 250px;
+	width: 260px;
 	}
 	
 .footer {
 	padding: 10px;
 	}
+	
+	
+/**
+ *
+ * Widgets en el sidebar
+ */
+
+.main-sidebar .widget {
+	background: url('imagenes/blanco25.png');
+	padding: 25px;
+	margin-bottom: 30px;
+	width: 260px;
+	} 
+
 
 /**
  *
