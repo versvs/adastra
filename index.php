@@ -51,7 +51,7 @@
 					</div>
 				<?php endif; ?>
 				
-				<?php the_excerpt(); ?>
+				<?php the_content(); ?>
 				
 				<span class="leer-mas alignright">
 					<a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s'), get_the_title() ) ?>">
