@@ -780,11 +780,15 @@ div.aligncenter {
 }
 
 .wp-caption {
+	max-width: 460px;
+	max-height: 345px;
    border: 1px solid #ddd;
    text-align: center;
    background-color: #f3f3f3;
-   padding-top: 4px;
+   padding: 20px 20px 60px 20px;
    margin: 10px;
+   display: block;
+   margin: 10px auto;
    /* optional rounded corners for browsers that support it */
    -moz-border-radius: 3px;
    -khtml-border-radius: 3px;
@@ -796,13 +800,15 @@ div.aligncenter {
    margin: 0;
    padding: 0;
    border: 0 none;
+   max-height: 345px;
+   max-width: 460px;
 }
 
 .wp-caption p.wp-caption-text {
-   font-size: 11px;
+   font-size: 22px;
    line-height: 17px;
    padding: 0 4px 5px;
-   margin: 0;
+   margin: 20px 0 0 0;
 }
 
 /*
