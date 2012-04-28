@@ -146,10 +146,6 @@ blockquote {
 	color:#777;
 	}
 
-blockquote p {
-	margin: 0;
-	}
-
 blockquote a{
 color:#999;
 }
@@ -510,6 +506,11 @@ h4 {
 	line-height:18px;
 	margin:0 0 15px 0;
 }
+
+.main blockquote p {
+	margin: 0;
+	}
+
 
 .main ol{
 line-height:18px;
