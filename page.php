@@ -15,7 +15,7 @@
 		</div>
 	
 		<div class="main">
-			<?php the_content('+ Leer el artículo completo'); ?>
+			<?php the_content('+ Leer el art&iacute;ulo completo'); ?>
 		</div>
 
 

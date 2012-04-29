@@ -704,57 +704,6 @@ img.wp-smiley:hover{
 	}
 
 /* Comments */
-
-
-
-
-
-.avatar {
-	float:left;
-	margin-right: 13px;
-	border:1px solid #222;
-}
-
-.avatar:hover{
-	border:1px solid #444;
-	}
-
-.alt{
-	color:#777;
-	}
-
-.listacomentarios .comment-body {
-	border: 1px solid #8e7a5b;
-	}
-	
-.listacomentarios .comment-body {
-	margin-top: 3px;
-	}
-
-.listapings {
-	margin-top: 20px;
-	padding-top: 20px;
-	border-top: 1px solid #999;
-	}
-	
-.listapings .comment-body {
-	border-bottom: 1px solid #8e7a5b;
-	}
-	
-.comment-body {
-	padding: 6px;
-	margin: 3px 0;
-	}
-	
-.comment-body .comment-author, .comment-body .comment-meta, .comment-body p, .comment-body .reply {
-	padding: 5px;
-	}
-
-.comment-body .reply {
-	padding-left: 83px;
-	}
-	
-	
 	
 	
 
@@ -869,24 +818,24 @@ img.wp-smiley:hover{
 
 .comments .comment {
 	padding: 20px;
-	background: #eee;
+	background: url('imagenes/blanco50.png');
 	margin: 20px 0;
+	border: 1px #ccc solid;
 	}
 
 .comments .comment-author {
-	float: left;
 	margin: 0 20px 10px 0;
 	display: block;
-	width: 80px;
 	}
 
 .comment .comment-body p {
 	display: block;
-	margin-left: 80px;
+	font-size: 15px;
 	}
 
 .comments .comment-author img {
 	display: inline-block;
+	float: right;
 	margin-bottom: 10px;
 	}
 
@@ -911,7 +860,6 @@ img.wp-smiley:hover{
 	}
 
 .comments .children .comment {
-	background: #ddd;
 	padding-bottom: 10px;
 	}
 
@@ -939,44 +887,20 @@ ol#comments{
 text-align:justify;
 }
 
-/* COMIENZO estilo para los diferentes niveles de comentarios anidados */
-
-.listacomentarios .depth-1 .comment-body {
-	background: #fff;
-	}
-	
-.listacomentarios .depth-2 .comment-body {
-	background: #f4f4f4;
-	}
-
-.listacomentarios .depth-3 .comment-body {
-	background: #fff;
-	}
-	
-.listacomentarios .depth-4 .comment-body {
-	background: #f4f4f4;
-	}
-
-.listacomentarios .depth-5 .comment-body {
-	background: #fff;
-	}
-	
-.listacomentarios .depth-6 .comment-body {
-	background: #f4f4f4;
-	}
-	
-.listacomentarios .depth-7 .comment-body {
-	background: #fff;
-	}
-	
-.listacomentarios .depth-8 .comment-body {
-	background: #f4f4f4;
-	}
 .listacomentarios ul {
 	list-style: none outside none;
 	}
 .listacomentarios li {
 	padding: 1px 6px;
+	}
+
+.listapings li {
+	list-style: circle;
+	margin: 5px 40px;
+	}
+
+.listapings li p {
+	font-size: 15px;
 	}
 
 /* FIN diferentes estilos para comentarios anidados */

@@ -11,8 +11,17 @@
 
 
 <div id="comments" class="comments single-post-comments clearfix">
+
+<?php 	
+$post_comments = get_comments(array('type' => 'comments','post_id' => $post->ID));
+
+if ( 0 < ( count($post_comments) ) ) {
+?>		
+
 	<h2 class="titulo"><?php comments_number(__('No comments'), __('1 Comment'), __('% Comments')); ?></h2>
 
+<?php } ?>
+	
 	<?php if ( have_comments() ) : ?>
 		<ol class="listacomentarios">
 			<?php
@@ -21,6 +30,17 @@
 			?>
 		</ol>
 		
+		
+<?php 	
+$post_trackbacks = get_comments(array('type' => 'trackback','post_id' => $post->ID));
+$post_pingbacks = get_comments(array('type' => 'pingback','post_id' => $post->ID));
+
+if ( 0 < ( count($post_trackbacks) + count($post_pingbacks) ) ) {
+?>		
+		
+		<h4>Referencias a esta entrada en otros blogs</h4>
+		<?php } ?>
+
 		<ul class="listapings">
 			<?php
 				/* Bucle para mostrar pings (trackbacks y pingbacks) */
@@ -28,7 +48,7 @@
 			?>
 		</ul>
 	<?php else : // If there are no comments yet ?>
-		<p><?php _e('Puedes ser el primero en dejar un comentario'); ?></p>
+	<!--	<p><?php _e('Puedes ser el primero en dejar un comentario'); ?></p> -->
 	<?php endif; ?>
 	
 	<?php if ( comments_open() ) : ?>
