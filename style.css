@@ -77,15 +77,6 @@ Para WordPress 3.3.* :)
     src: url("fonts/Delicious-BoldItalic.otf") format("opentype");
 }
 
-@font-face {
-    font-family: "Delicious";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: small-caps;
-    src: url("fonts/Delicious-SmallCaps.otf") format("opentype");
-}
-
-
 /**
  *
  * Algunas cosas genericas
