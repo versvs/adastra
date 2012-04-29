@@ -695,18 +695,8 @@ img.wp-smiley:hover{
 	
 .paginado a {
 	text-transform: uppercase;
-	color: #8E7A5B;
 	padding: 5px;
 	}
-
-.paginado a:hover {
-	color: #e6e2c5;
-	}
-
-/* Comments */
-	
-	
-
 
 /**
  * Comentarios
@@ -824,7 +814,7 @@ img.wp-smiley:hover{
 	}
 
 .comments .comment-author {
-	margin: 0 20px 10px 0;
+	margin: 0 0 10px 0;
 	display: block;
 	}
 
