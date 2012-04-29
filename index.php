@@ -92,6 +92,3 @@
 	<!-- #footer -->
     <?php get_footer(); ?>
 	<!-- /#footer -->
-
-
-<?php get_template_part('subfooter'); ?>
