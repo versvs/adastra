@@ -162,6 +162,19 @@ code {
 	background:#efefef;
 	color:#000;
 	}
+	
+input, textarea, select, button {
+	background:#fafafa;
+	border:1px solid #8e7a5b;
+	color:#666;
+	padding:2px;
+	margin:3px 0 5px 0;
+	font-size: 14px;
+	}
+
+input:focus{
+border:1px solid #555;
+}
 
 
 
@@ -232,7 +245,7 @@ h4 {
  */
  
 .footer.container {
-	background: #e6e2c5;
+	background: url('imagenes/blanco50.png');
 	border-top: 1px solid #8e7a5b;
 	}
 	
@@ -653,12 +666,11 @@ img.wp-smiley:hover{
 
 /* Comments */
 
-#comments {
-	padding: 0 15px;
-	}
 
 
-.avatar{
+
+
+.avatar {
 	float:left;
 	margin-right: 13px;
 	border:1px solid #222;
@@ -703,6 +715,168 @@ img.wp-smiley:hover{
 	padding-left: 83px;
 	}
 	
+	
+	
+	
+
+
+/**
+ * Comentarios
+ *
+ */
+
+.comments {
+	background: url('imagenes/blanco25.png');
+	padding: 30px;
+	width: 560px;
+	}
+
+.comments h2.titulo {
+	margin-top: 0;
+	margin-bottom: 10px;
+	}
+
+.comments form {
+	display: block;
+	}
+
+.comments .cuerpo {
+	width: 555px;
+	}
+
+.comments .cuerpo textarea {
+	border: 1px #ccc solid;
+	width: 530px;
+	padding: 15px;
+	height: 70px;
+	font-size: 19px;
+	/* Firefox */
+	-moz-transition-duration: 800ms;
+	-moz-transition-property: height;
+	-moz-transition-timing-function: ease;
+	/* Chromium */	
+	-webkit-transition-duration: 800ms;
+	-webkit-transition-property: height;
+	-webkit-transition-timing-function: ease;
+	/* Opera */	
+	-o-transition-duration: 800ms;
+	-o-transition-property: height;
+	-o-transition-timing-function: ease;
+	/* Standard */ /* IE juajua */	
+	transition-duration: 800ms;
+	transition-property: height;
+	transition-timing-function: ease;	
+	}
+
+.comments .cuerpo textarea:focus {
+	height: 200px;
+	}	
+	
+
+.comments .campo {
+	width: 170px;
+	margin: 10px 15px 10px 15px;
+	}
+
+.comments .campo.primero {
+	margin-left: 0;
+	margin-right: 10px;
+	}
+
+.comments .campo.ultimo {
+	margin-right: 0;
+	margin-left: 10px;
+	}
+
+.comments .campo input {
+	width: 160px;
+	height: 15px;
+	padding: 7px 4px;
+	border: 1px #ccc solid;
+	}
+
+.comments label {
+	display: block;
+	color: #8E7A5B;
+	margin-bottom: 3px;
+	}
+
+.comments input.enviar {
+	height: 38px;
+	margin: 0;
+	width: 170px;
+	background: #ccc;
+	color: #888;
+	}
+
+.comments input.enviar:hover {
+	border: 1px #444 solid;
+	color: #444;
+	}
+	
+.comments .comentario-enviar.campo {
+	margin: 0;
+	}
+
+.comments .comentarios-rss-link {
+	margin-top: 15px;
+	display: block;
+	}
+	
+.comments ol,
+.comments ul {
+	padding-left: 0;
+	}
+
+.comments .comment {
+	padding: 20px;
+	background: #eee;
+	margin: 20px 0;
+	}
+
+.comments .comment-author {
+	float: left;
+	margin: 0 20px 10px 0;
+	display: block;
+	width: 80px;
+	}
+
+.comment .comment-body p {
+	display: block;
+	margin-left: 80px;
+	}
+
+.comments .comment-author img {
+	display: inline-block;
+	margin-bottom: 10px;
+	}
+
+
+.comments .comment-author .fn {
+	vertical-align: top;
+	clear: both;
+	}
+.comments .says {
+	display: none;
+	}
+
+.comments .reply {
+	width: 55px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+	padding: 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	}
+
+.comments .children .comment {
+	background: #ddd;
+	padding-bottom: 10px;
+	}
+
+
 
 /* COMIENZO ocultamos tanto la etiqueta al lado del formulario
 como la lista de etiquetas permitidas
@@ -714,17 +888,6 @@ en el comentario */
 	width: 120px;
 	}
 
-#commentform .required {
-	display: none;
-	}
-
-#commentform .comment-form-comment label {
-	display: none;
-	}
-
-.form-allowed-tags {
-	display: none;
-	}
 
 .listapings .reply {
 	display: none;
@@ -779,26 +942,6 @@ text-align:justify;
 
 /* FIN diferentes estilos para comentarios anidados */
 
-/* Formularios */
-
-input, textarea, select, button{
-background:#fafafa;
-border:1px solid #8e7a5b;
-color:#666;
-padding:2px;
-margin:3px 0 5px 0;
-font:10px "Lucida Grande", "Lucida Sans", Verdana, Arial, Helvetica, sans-serif;
-}
-
-input:focus{
-border:1px solid #555;
-}
-
-/* Más formularios - Formulario Comment */
-
-textarea#comment {
-	width: 85%;
-	}
 
 
 /* Pie */
@@ -807,14 +950,13 @@ textarea#comment {
 	font-size:17px;
 }
 
-.footer a{
-color:#999999;
-}
+.footer a {
+	color:#999999;
+	}
 
-.footer a:hover{
-color:#777;
-background-color: #e6e2c5;
-}
+.footer a:hover {
+	color:#777;
+	}
 
 /* subpie */
 
