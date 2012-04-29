@@ -550,6 +550,7 @@ h4 {
 .post-comments a {
 	background: url('imagenes/comment.png') no-repeat 0 7px;
 	padding-left: 32px;
+	padding-bottom: 3px;
 	display: inline-block;
 	font-size: 21px;
 	}
