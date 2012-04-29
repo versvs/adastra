@@ -18,10 +18,16 @@
 			</a>
 		</div>
 	
-		<div class="main">
-			<?php the_content('+ Leer el art&iacute;ulo completo'); ?>
-		</div>
-
+			<div class="post-content clearfix">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<div class="post-thumbnail">
+						<?php the_post_thumbnail('single-post') ?>
+					</div>
+				<?php endif; ?>
+				
+				<?php the_content(); ?>
+						
+			</div>
 
 	</div>
 
