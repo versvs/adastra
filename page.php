@@ -10,8 +10,12 @@
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 	<div class="post">
-		<div class="titulofecha">
-				<h2 class="titulo" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<div class="post-info clearfix">
+			<a class="post-title" href="<?php the_permalink() ?>" rel="bookmark">
+				<h2>
+					<?php the_title(); ?>
+				</h2>
+			</a>
 		</div>
 	
 		<div class="main">
