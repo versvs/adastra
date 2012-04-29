@@ -12,7 +12,7 @@ if ( function_exists('register_sidebar') ) {
   register_sidebar(array('name'=>'footer_derecha'));
    }
 
-// Añadir soporte para "Imagen Destacada"
+// Soporte para "Imagen Destacada"
 if (function_exists('add_theme_support')) {
 	add_theme_support('post-thumbnails');
 	add_image_size('single-post', 500, 250, true);
@@ -30,7 +30,7 @@ add_action( 'init', 'register_my_menus' );
     }
 
 /**
- * Añadiendo soporte para extractos a las pÃ¡ginas
+ * Soporte para extractos a las paginas
  * compatible con wp 3.0+
  */
 add_post_type_support( 'page', 'excerpt' );
