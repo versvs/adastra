@@ -275,9 +275,8 @@ h4 {
 	}
 
 .sub-footer {
-	padding-top: 30px;
-	background: url('img/separadorpie.png') no-repeat top center;
-	color: #fff;
+	padding-top: 50px;
+	background: url('imagenes/led.png') no-repeat top center;
 	text-align: center;
 	}
 .sub-footer a {
