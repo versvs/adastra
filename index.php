@@ -12,7 +12,7 @@
 		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 			<div class="post-info clearfix">
 				 	<span class="post-comments alignright">
-				 		<a rel="bookmark" href="<?php echo get_permalink(); ?>#comments">
+				 		<a rel="bookmark" title="Comentarios para <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
 				 			<?php comments_number('0','1','%'); ?>
 				 		</a>
 				 	</span>
@@ -24,7 +24,7 @@
 						<?php edit_post_link('Editar'); ?>
 					</span>
 					
-					<a class="post-title" href="<?php the_permalink() ?>" rel="bookmark">
+					<a class="post-title" title="Lee <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
 						<h2>
 							<?php the_title(); ?>
 						</h2>
@@ -37,7 +37,7 @@
 					</span>
 						
 					<span class="post-date clearfix">
-						<a href="<?php the_permalink() ?>" rel="bookmark">
+						<a title="Enlace permanente para <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
 							<?php the_date(); ?>
 							<?php _e("@"); ?>
 							<?php the_time('H:i'); ?>
