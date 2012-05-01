@@ -703,26 +703,42 @@ img.wp-smiley:hover{
  *
  */
 
-.comments {
+#comments {
 	background: url('imagenes/blanco25.png');
-	padding: 30px;
+	padding: 30px 30px 60px 30px;
 	width: 560px;
+	text-align: left;
 	}
 
-.comments h2.titulo {
-	margin-top: 0;
-	margin-bottom: 10px;
+/* COMIENZO ocultamos tanto la etiqueta al lado del formulario
+como la lista de etiquetas permitidas
+también ocultamos el botón de responder con comentarios a los pingbacks
+en el comentario */
+
+.comment-notes,
+#comments .required,
+.form-allowed-tags,
+.listapings .reply {
+	display: none;
+	}	
+	
+/* FIN ocultamos etiquetas */	
+
+
+#comments h3#reply-title {
+	font-size: 20px;
+	margin: 0 0 10px 0;
 	}
 
-.comments form {
+#comments form {
 	display: block;
 	}
 
-.comments .cuerpo {
+#comments .comment-form-comment {
 	width: 555px;
 	}
 
-.comments .cuerpo textarea {
+#comments .comment-form-comment textarea {
 	border: 1px #ccc solid;
 	width: 530px;
 	padding: 15px;
@@ -746,40 +762,59 @@ img.wp-smiley:hover{
 	transition-timing-function: ease;	
 	}
 
-.comments .cuerpo textarea:focus {
+#comments .comment-form-comment textarea:focus {
 	height: 200px;
 	}	
 	
 
-.comments .campo {
+#comments .comment-form-author,
+#comments .comment-form-email,
+#comments .comment-form-url,
+#comments .comment-form-comment {
+	font-size: 15px;
+	line-height: 17px;
+	}
+
+#comments .comment-form-author,
+#comments .comment-form-email,
+#comments .comment-form-url {
+	float: left;
+	display: inline-block;
 	width: 170px;
 	margin: 10px 15px 10px 15px;
 	}
 
-.comments .campo.primero {
+#comments .comment-form-author {
 	margin-left: 0;
 	margin-right: 10px;
 	}
 
-.comments .campo.ultimo {
+#comments .comment-form-url {
 	margin-right: 0;
 	margin-left: 10px;
 	}
 
-.comments .campo input {
+.comment-form-author input,
+.comment-form-email input, 
+.comment-form-url input {
 	width: 160px;
 	height: 15px;
 	padding: 7px 4px;
 	border: 1px #ccc solid;
 	}
 
-.comments label {
+#comments label {
 	display: block;
 	color: #8E7A5B;
 	margin-bottom: 3px;
 	}
 
-.comments input.enviar {
+#comments .form-submit {
+	margin: 0;
+	float: right;
+	}
+
+#comments input#submit {
 	height: 38px;
 	margin: 0;
 	width: 170px;
@@ -787,33 +822,29 @@ img.wp-smiley:hover{
 	color: #888;
 	}
 
-.comments input.enviar:hover {
+#comments input#submit:hover {
 	border: 1px #444 solid;
 	color: #444;
 	}
-	
-.comments .comentario-enviar.campo {
-	margin: 0;
-	}
 
-.comments .comentarios-rss-link {
+#comments .comentarios-rss-link {
 	margin-top: 15px;
 	display: block;
 	}
 	
-.comments ol,
-.comments ul {
+#comments ol,
+#comments ul {
 	padding-left: 0;
 	}
 
-.comments .comment {
+#comments .comment {
 	padding: 20px;
 	background: url('imagenes/blanco50.png');
 	margin: 20px 0;
 	border: 1px #ccc solid;
 	}
 
-.comments .comment-author {
+#comments .comment-author {
 	margin: 0 0 10px 0;
 	display: block;
 	}
@@ -823,22 +854,22 @@ img.wp-smiley:hover{
 	font-size: 15px;
 	}
 
-.comments .comment-author img {
+#comments .comment-author img {
 	display: inline-block;
 	float: right;
 	margin-bottom: 10px;
 	}
 
 
-.comments .comment-author .fn {
+#comments .comment-author .fn {
 	vertical-align: top;
 	clear: both;
 	}
-.comments .says {
+#comments .says {
 	display: none;
 	}
 
-.comments .reply {
+#comments .reply {
 	width: 55px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -849,29 +880,11 @@ img.wp-smiley:hover{
 	border-radius: 2px;
 	}
 
-.comments .children .comment {
+#comments .children .comment {
 	padding-bottom: 10px;
 	}
 
 
-
-/* COMIENZO ocultamos tanto la etiqueta al lado del formulario
-como la lista de etiquetas permitidas
-también ocultamos el botón de responder con comentarios a los pingbacks
-en el comentario */
-
-#commentform p label {
-	display: block;
-	width: 120px;
-	}
-
-
-.listapings .reply {
-	display: none;
-	}
-	
-/* FIN ocultamos etiquetas */	
-	
 
 ol#comments{
 text-align:justify;
