@@ -8,12 +8,6 @@
 		<?php get_template_part('recomendado'); ?>
 
 
-
-
-
-
-
-
 </div> <!-- /#main-wrapper -->
 </div> <!-- /#main-container -->
 
