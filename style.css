@@ -1012,12 +1012,12 @@ div.aligncenter {
 }
 
 /*
- * Página de error
+ * Pagina de error
  */
 #recientes,
 #comentados {
 	display: inline-block;
-	width: 40%;
+	width: 37%;
 	margin: 20px 0;
 	padding: 30px;
 	border: 1px solid #444;
