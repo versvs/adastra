@@ -1,132 +1,94 @@
 <?php get_header(); ?>
 
+<div id="main-container" class="main container clearfix">
 
-<div id="main-container" class="container clearfix">
+<div id="main-wrapper" class="main wrapper clearfix"> <!-- #main -->
 
-<div id="main-wrapper" class="search wrapper clearfix"> <!-- #main -->
+<div id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
 
-<div id="main" class="main search-page posts alignleft clearfix">
+<?php if (have_posts()) : ?>
+	<?php while (have_posts()) : the_post(); ?>
 
-
-
-
-  
-  <div class="searchpanel">
-    <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
-      <div id="search">
-        <input type="text" value="<?php the_search_query(); ?>" name="s" id="s" />
-        <input type="submit" id="searchsubmit" value="Buscar" />
-      </div>
-    </form>
-  </div>
-
-  <h2><?php _e('Search Results'); ?></h2>
-
-  
-    	<?php if (have_posts()) : ?>
-
-    		<?php while (have_posts()) : the_post(); ?>
-
-<?php		if ( $iteracion==1 ) { ?>
-					<div <?php post_class('primero clearfix'); ?> id="post-<?php the_ID(); ?>">
-				<?php } elseif( $iteracion==2) { ?>
-					<div <?php post_class('ultimo clearfix'); ?> id="post-<?php the_ID(); ?>">
-				<?php } else { ?>
-					<div <?php post_class('clearfix'); ?> id="post-<?php the_ID(); ?>">
-				<?php } ?>
-
-
-
-						<?php if ( has_post_thumbnail() ) : ?>
-							<div class="post-thumbnail">
-								<a href="<?php the_permalink() ?>" title="Leer <?php the_title(); ?>" rel="bookmark">
-									<?php the_post_thumbnail('portada') ?>
-								</a>
-							</div>
-						<?php endif; ?>					
-						<div class="post-content">
-						
-				<?php edit_post_link(__('Edit')); ?>
-
-						<h2 class="post-title">
-							<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">
-								<?php the_title(); ?>
-							</a>
+		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+			<div class="post-info clearfix">
+				 	<span class="post-comments alignright">
+				 		<a rel="bookmark" title="Comentarios para <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
+				 			<?php comments_number('0','1','%'); ?>
+				 		</a>
+				 	</span>
+				 	
+					<span class="category-link">
+						<?php the_category(' ') ?>
+					</span>
+					<span class="edit-link">
+						<?php edit_post_link('Editar'); ?>
+					</span>
+					
+					<a class="post-title" title="Lee <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+						<h2>
+							<?php the_title(); ?>
 						</h2>
-						<div class="post-meta clearfix">
-							<span class="post-autor">
-								Por <?php the_author_posts_link() ?>
-							</span>
-							<span class="bullet">
-								|
-							</span>
-							<span class="category-link">
-								<?php the_category(' '); ?>						
-							</span>
-							<span class="bullet">
-								|
-							</span>						
-							<span class="post-date">
-								<?php echo get_the_date(); ?>
-							</span>
+					</a>
+					
+					<span class="post-autor">
+						<a href="<?php get_the_author_url(); ?>">
+							<?php the_author_posts_link() ?>
+						</a>
+					</span>
+						
+					<span class="post-date clearfix">
+						<a title="Enlace permanente para <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+							<?php the_date(); ?>
+							<?php _e("@"); ?>
+							<?php the_time('H:i'); ?>
+						</a>
+					</span>
 
-							<span class="post-comments alignright">
-								<a rel="bookmark" href="<?php echo get_permalink(); ?>#comments"><?php comments_number( 'sin comentarios', 'un comentario', '% comentarios' ); ?></a>
-							</span>
-						</div>						
-							<div class="post-excerpt">
-								<?php the_excerpt() ?>
-								<span class="leer-mas alignright">
-									<a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'arras'), get_the_title() ) ?>">
-										<?php _e('Ver +', 'arras') ?>
-									</a>
-								</span>
-							</div>
-						</div>
-					<?php get_template_part('compartir'); ?>
+			</div>
+	
+			<div class="post-content clearfix">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<div class="post-thumbnail">
+						<?php the_post_thumbnail('single-post') ?>
 					</div>
+				<?php endif; ?>
+				
+				<?php the_content(); ?>
+		<!-- esto no lo estamos usando si mostramos todo el contenido
+				<?php //the_excerpt(); ?>				
+				<span class="leer-mas alignright">
+					<a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s'), get_the_title() ) ?>">
+						<?php _e('Leer +') ?>
+					</a>
+				</span>				
+		aquí terminamos de comentar lo que no queremos usar -->
+			</div>
+			
+			<div class="post-tags clearfix">
+				<?php the_tags('Etiquetas: ', ', ', ''); ?>
+			</div>
+   	</div>
+	<?php endwhile; ?>
+	
+<?php else: ?>
+	<?php get_template_part('recomendado'); ?>
+<?php endif; ?>
 
 
+<?php get_template_part('paginado'); ?>
 
 
-
-<?php
-$iteracion = $iteracion + 1;
-endwhile;
-
-// Reset Post Data
-wp_reset_postdata();
-
-?>
-
-
-	<?php else : ?>
-
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
-
-	<?php endif; ?>
-
-
-
-			<!-- enlaces de navegacion anterior-siguientes -->			
-			<?php if (will_paginate()): ?>
-				<?php get_template_part('navegacion'); ?>
-			<?php endif; ?>
-
-
+<!-- /#contenido -->
 </div>
 
-	<?php get_template_part('sidebar'); ?>	
 
+<?php get_template_part('sidebar'); ?>
 
 
 </div> <!-- /#main-wrapper -->
 </div> <!-- /#main-container -->
 
 
-	
-
-<!-- #footer -->
-<?php get_footer(); ?>
-<!-- /#footer -->
+	<!-- #footer -->
+    <?php get_footer(); ?>
+	<!-- /#footer -->
