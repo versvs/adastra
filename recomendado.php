@@ -1,4 +1,12 @@
-	<h3>Puedes hacer una b&uacute;squeda...</h3>
+	<div class="post clearfix">
+		<h3 style="text-align:center">
+			No hemos encontrado lo que buscabas.
+			<a href="<?php bloginfo('url'); ?>">
+				Volver al inicio
+			</a>
+		</h3>
+		
+		<h3>Puedes hacer una b&uacute;squeda...</h3>
 		<?php get_template_part('searchform'); ?>
 
 		<h3>o quiz&aacute; te interesen los siguientes posts:</h3>
@@ -35,3 +43,4 @@
 				<?php endforeach; ?>
 			</ul>
 		</div>
+	</div>
