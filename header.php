@@ -37,7 +37,7 @@
 <?php //comments_popup_script(); // off by default ?>
 <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div id="nav-container" class="nav container clearfix">
 	<div id="nav" class="wrapper clearfix">
