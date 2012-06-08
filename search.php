@@ -38,7 +38,7 @@
 						
 					<span class="post-date clearfix">
 						<a title="Enlace permanente para <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
-							<?php the_date(); ?>
+							<?php get_the_date(); ?>
 							<?php _e("@"); ?>
 							<?php the_time('H:i'); ?>
 						</a>
