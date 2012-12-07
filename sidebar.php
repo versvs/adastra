@@ -1,4 +1,5 @@
-<div id="sidebar" class="main-sidebar alignleft clearfix">
+<aside id="sidebar" class="main-sidebar alignleft clearfix">
+
 <ul>
 
 <?php
@@ -6,9 +7,6 @@
   * only shown if widget sidebar not enabled
   */
 		if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) :
-
-    wp_list_bookmarks('title_after=&title_before=');
-	  wp_list_categories('title_li=' . __('Categories:'));
     ?>
     <li id="search">
       <label for="s"><?php _e('Search:'); ?></label>
@@ -39,4 +37,4 @@
 <?php endif; ?>
 
 </ul>
-</div>
+</aside>

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
@@ -40,13 +40,13 @@
 <body <?php body_class(); ?>>
 
 <div id="nav-container" class="nav container clearfix">
-	<div id="nav" class="wrapper clearfix">
+	<nav id="nav" class="wrapper clearfix">
 			<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
-	</div>
+	</nav>
 </div>
 
 <div id="header-container" class="container clearfix">
-	<div id="header-wrapper" class="header wrapper clearfix">
+	<header id="header-wrapper" class="header wrapper clearfix">
 		<div id="busqueda">
 			<?php get_search_form(); ?>
 		</div>
@@ -61,6 +61,6 @@
 				<?php bloginfo('description'); ?>
 			</h4>
 		</div>
-	</div> <!-- /#header-wrapper -->
+	</header> <!-- /#header-wrapper -->
 </div> <!-- /#header-container -->
 

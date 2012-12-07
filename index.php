@@ -4,12 +4,12 @@
 
 <div id="main-wrapper" class="main wrapper clearfix"> <!-- #main -->
 
-<div id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
+<section id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
 
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 
-		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 			<div class="post-info clearfix">
 				 	<span class="post-comments alignright">
 				 		<a rel="bookmark" title="Comentarios para <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
@@ -67,7 +67,7 @@
 			<div class="post-tags clearfix">
 				<?php the_tags('Etiquetas: ', ', ', ''); ?>
 			</div>
-   	</div>
+   	</article>
 	<?php endwhile; ?>
 	
 <?php else: ?>
@@ -79,7 +79,7 @@
 
 
 <!-- /#contenido -->
-</div>
+</section>
 
 
 <?php get_template_part('sidebar'); ?>
