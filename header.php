@@ -62,13 +62,14 @@
 		<div id="busqueda">
 			<?php get_search_form(); ?>
 		</div>
-	
-		<hgroup id="branding" class="branding">
-			<a href="<?php bloginfo('url'); ?>">
+
+		<a href="<?php bloginfo('url'); ?>">	
+			<hgroup id="branding" class="branding">
 				<h1><?php bloginfo('name'); ?></h1>
-			</a>
-			<h4><?php bloginfo('description'); ?></h4>
-		</hgroup>
+				<h4><?php bloginfo('description'); ?></h4>
+			</hgroup>
+		</a>
+
 	</header> <!-- /#header-wrapper -->
 </div> <!-- /#header-container -->
 

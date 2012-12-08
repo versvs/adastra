@@ -32,9 +32,7 @@
 					</a>
 					
 					<span class="post-autor">
-						<a title="<?php _e('Página del autor', 'adastra'); ?>" href="<?php get_the_author_url(); ?>">
-							<?php the_author_posts_link() ?>
-						</a>
+						<?php the_author_posts_link() ?>
 					</span>
 						
 					<span class="post-date clearfix">

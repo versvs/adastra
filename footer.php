@@ -4,19 +4,25 @@
 			<footer id="footer-wrapper" class="footer-wrapper wrapper clearfix">
 				<section id="footer" class="clearfix">
 					<div class="widget-area izquierda">
+						<ul>
 							<?php if ( !function_exists('dynamic_sidebar')
 								|| !dynamic_sidebar('footer_izquierda') ) : ?>
 							<?php endif; ?>
+						</ul>
 					</div>
 					<div class="widget-area centro">
+						<ul>
 							<?php if ( !function_exists('dynamic_sidebar')
 								|| !dynamic_sidebar('footer_centro') ) : ?>
 							<?php endif; ?>
+						</ul>
 					</div>
 					<div class="widget-area derecha">
+						<ul>
 							<?php if ( !function_exists('dynamic_sidebar')
 								|| !dynamic_sidebar('footer_derecha') ) : ?>
 							<?php endif; ?>
+						</ul>
 					</div>
 				</section>
 				<section id="sub-footer" class="sub-footer clearfix wrapper">
@@ -28,7 +34,7 @@
 							<em>Ad Astra</em>
 						  </a>
 					<?php _e('por', 'adastra'); ?>
-					<a href="http://www.versvs.net/" title="Jose Alcántara" rel="follow">
+					<a href="http://www.versvs.net/" title="Jose Alcántara">
 						Jose Alcántara
 					</a>
 					<?php _e('para', 'adastra'); ?>
