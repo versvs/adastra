@@ -34,7 +34,7 @@
 <link rel="alternate" type="text/xml" title="RSS .92" href="<?php echo get_feed_link( 'rss' ); ?>" />
 <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php echo get_feed_link( 'atom' ); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<?php wp_get_archives('type=monthly&format=link'); ?>
+<?php //wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
 
 

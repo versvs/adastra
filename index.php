@@ -31,9 +31,7 @@
 					</a>
 					
 					<span class="post-autor">
-						<a href="<?php get_the_author_url(); ?>">
 							<?php the_author_posts_link() ?>
-						</a>
 					</span>
 						
 					<span class="post-date clearfix">
