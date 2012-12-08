@@ -56,14 +56,7 @@
 				<?php endif; ?>
 				
 				<?php the_content(); ?>
-		<!-- esto no lo estamos usando si mostramos todo el contenido
-				<?php //the_excerpt(); ?>				
-				<span class="leer-mas alignright">
-					<a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s'), get_the_title() ) ?>">
-						<?php _e('Leer +') ?>
-					</a>
-				</span>				
-		aquí terminamos de comentar lo que no queremos usar -->
+
 			</section>
 			
 			<aside class="post-tags clearfix">

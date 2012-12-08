@@ -6,3 +6,22 @@ crear página de opciones de tema
 
 
 clases estandard requisito css wp.org
+
+
+
+
+Presentation vs Functionality
+Language
+Themes are required to have all public-facing text in English.
+Theme may optionally incorporate translation/internationalization; however, if incorporated, translation/internationalization must support WordPress core functionality
+Themes are required to use a string, rather than a variable, constant, or concatenation, as the textdomain in translation functions.
+
+
+
+
+Including Stylesheets and Scripts
+
+Themes are required to enqueue all stylesheets and scripts, using wp_enqueue_style()/wp_enqueue_script(), and hooked into an appropriate hook via callback function, rather than hard-coding stylesheet/script links or tags in the template.
+Themes are required to use the Theme-specific hook for admin-enqueued scripts/stylesheets, e.g. admin_print_scripts-appearance_page_$menu_slug
+Themes are recommended to hook stylesheet and script enqueue callbacks into `wp_enqueue_scripts`
+Themes may optionally link the default stylesheet (style.css) directly in the document head, or via wp_enqueue_style(). Whichever method is used, the default stylesheet must be referenced via get_stylesheet_uri()</tt>

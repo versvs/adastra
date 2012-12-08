@@ -65,13 +65,9 @@
 	
 		<hgroup id="branding" class="branding">
 			<a href="<?php bloginfo('url'); ?>">
-				<h1>
-					<?php bloginfo('name'); ?>
-				</h1>
+				<h1><?php bloginfo('name'); ?></h1>
 			</a>
-			<h4>
-				<?php bloginfo('description'); ?>
-			</h4>
+			<h4><?php bloginfo('description'); ?></h4>
 		</hgroup>
 	</header> <!-- /#header-wrapper -->
 </div> <!-- /#header-container -->
