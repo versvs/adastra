@@ -36,7 +36,7 @@
 						
 					<span class="post-date clearfix">
 						<a title="<?php _e('Enlace permanente para'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
-							<time pubdate datetime="<?php echo get_the_date('Y-m-d');?>T<?php the_time('H:i'); ?>">
+							<time datetime="<?php echo get_the_date('Y-m-d');?>T<?php the_time('H:i'); ?>">
 								<?php echo get_the_date(); ?>
 								<?php _e("@"); ?>
 								<?php the_time('H:i'); ?>
