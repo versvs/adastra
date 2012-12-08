@@ -26,9 +26,9 @@
 					</span>
 					
 					<a class="post-title" href="<?php the_permalink() ?>" rel="bookmark">
-						<h2>
+						<h1>
 							<?php the_title(); ?>
-						</h2>
+						</h1>
 					</a>
 					
 					<span class="post-autor">

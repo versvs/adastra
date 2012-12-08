@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+
+<base href="<?php bloginfo('url'); ?>">
 
 <title><?php
 	/*
@@ -26,15 +28,25 @@
 
 	?></title>
 	
-
+<?php //multitud de formatos de feed, rss 0.92 podría quitarse, la verdad, y atom también... pero bueno ?>
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
-<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
-<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
+<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS 2.0 Feed" href="<?php echo get_feed_link( 'rss2' ); ?>" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="<?php echo get_feed_link( 'rss' ); ?>" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php echo get_feed_link( 'atom' ); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
+
+
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.min-1.8.3.js"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.autogrow.js"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>
+
+<!--[if lt IE 9]>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/html5.js"></script>
+<![endif]-->
+
+
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

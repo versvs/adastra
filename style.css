@@ -2,10 +2,10 @@
 Theme Name: Ad Astra
 Theme URI: http://www.versvs.net/
 Version: 3.0
-Description: AdAstra es un tema sencillo, con una unica columna diseÒado para ser ligero. Contiene 3 ·reas para widgets en la zona del pie. La versiÛn 3 est· reescrita completamente usando HTML5.
-Author: <a href="http://www.versvs.net">Jose Alc·ntara</a>
+Description: AdAstra es un tema sencillo, con una unica columna dise√±ado para ser ligero. Contiene 3 √°reas para widgets en la zona del pie. La versi√≥n 3 est√° reescrita completamente usando HTML5.
+Author: <a href="http://www.versvs.net">Jose Alc√°ntara</a>
 Tags: brown, one-column, fixed-width, fluid-width, light, widget
-AdAstra esta licenciado bajo los terminos de la licencia GPL v3 y esta dedicado a los amantes del software libre pata negra. °A disfrutarlo!
+AdAstra esta licenciado bajo los terminos de la licencia GPL v3 y esta dedicado a los amantes del software libre pata negra. ¬°A disfrutarlo!
 por Jose Alcantara - Versvs -- http://www.versvs.net
 
 Para WordPress 3.5.* :)
@@ -15,9 +15,9 @@ Para WordPress 3.5.* :)
 /**
  *
  * Fuentes: PT Sans Narrow
- * Las licencias de las fuentes est·n incluidas en "fonts/OFL.txt"
- * Fuentes Ubuntu diseÒadas con el patrocinio de Canonical Inc. http://font.ubuntu.com/
- * Fuentes Delicious fueron diseÒadas por Jos Buivenga (exljbris) -> www.exljbris.com
+ * Las licencias de las fuentes est√°n incluidas en "fonts/OFL.txt"
+ * Fuentes Ubuntu dise√±adas con el patrocinio de Canonical Inc. http://font.ubuntu.com/
+ * Fuentes Delicious fueron dise√±adas por Jos Buivenga (exljbris) -> www.exljbris.com
  *
  */
 
@@ -514,6 +514,14 @@ h4 {
 	}
 
 
+/* Contenido */
+
+.contenido h1 {
+	font-size: 32px;
+	text-align: left;
+	margin: 0 0 10px 0;
+	}
+
 
 /* Posts */
 
@@ -565,6 +573,7 @@ h4 {
 	margin: 3px;
 	}
 
+.post-title h1,
 .post-title h2 {
 	font-size: 32px;
 	}
@@ -573,6 +582,7 @@ h4 {
 	border-bottom: 1px #aaa dashed;
 	}
 
+:hover.post-title h1,
 :hover.post-title h2 {
 	color: #888;
 	}
@@ -712,7 +722,7 @@ img.wp-smiley:hover{
 
 /* COMIENZO ocultamos tanto la etiqueta al lado del formulario
 como la lista de etiquetas permitidas
-tambi√©n ocultamos el bot√≥n de responder con comentarios a los pingbacks
+tambi√É¬©n ocultamos el bot√É¬≥n de responder con comentarios a los pingbacks
 en el comentario */
 
 .comment-notes,

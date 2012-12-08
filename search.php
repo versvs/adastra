@@ -6,9 +6,13 @@
 
 <section id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
 
+	<h1>
+		<?php printf( __( 'Resultados de bÃºsqueda para: %s', 'adastra' ), '<span>' . get_search_query() . '</span>' ); ?>
+	</h1>
+
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
-
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 				<header class="post-info clearfix">
 				 	<span class="post-comments alignright">
 				 		<a rel="bookmark" title="<?php _e('Comentarios para', 'adastra'); ?> <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
@@ -48,27 +52,10 @@
 			</header>
 	
 			<section class="post-content clearfix">
-				<?php if ( has_post_thumbnail() ) : ?>
-					<div class="post-thumbnail">
-						<?php the_post_thumbnail('single-post') ?>
-					</div>
-				<?php endif; ?>
 				
-				<?php the_content(); ?>
-		<!-- esto no lo estamos usando si mostramos todo el contenido
-				<?php //the_excerpt(); ?>				
-				<span class="leer-mas alignright">
-					<a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s'), get_the_title() ) ?>">
-						<?php _e('Leer +') ?>
-					</a>
-				</span>				
-		aquí terminamos de comentar lo que no queremos usar -->
+				<?php the_excerpt(); ?>
 			</section>
-			
-			<aside class="post-tags clearfix">
-				<?php the_tags(__('Etiquetas: ', 'adastra'), ', ', ''); ?>
-			</aside>
-   	</article>
+	   	</article>
 	<?php endwhile; ?>
 	
 <?php else: ?>

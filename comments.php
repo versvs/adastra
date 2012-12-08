@@ -68,7 +68,9 @@
 		<p class="nocomments"><?php _e( 'Los comentarios están cerrados.', 'adastra' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+
+	<?php $adastra_textarea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="4" aria-required="true"></textarea></p>'; ?>
+	<?php comment_form(array('comment_field' => $adastra_textarea)); ?>
 
 
 </article>
