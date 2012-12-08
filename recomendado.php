@@ -1,17 +1,17 @@
 	<section class="post clearfix">
 		<h2 style="text-align:center">
-			<?php _e( 'No hemos encontrado lo que buscabas.'); ?>
+			<?php _e( 'No hemos encontrado lo que buscabas.', 'adastra'); ?>
 			<a href="<?php bloginfo('url'); ?>">
-				<?php _e( 'Volver al inicio'); ?>
+				<?php _e( 'Volver al inicio', 'adastra'); ?>
 			</a>
 		</h2>
 		
-		<h3><?php _e( 'Puedes hacer una búsqueda...'); ?></h3>
+		<h3><?php _e( 'Puedes hacer una búsqueda...', 'adastra'); ?></h3>
 		<?php get_template_part('searchform'); ?>
 
-		<p><?php _e( 'o quizá te interesen los siguientes posts:'); ?></p>
+		<p><?php _e( 'o quizá te interesen los siguientes posts:', 'adastra'); ?></p>
 		<aside id="recientes">
-			<h3><?php _e( 'Posts recientes'); ?></h3>
+			<h3><?php _e( 'Posts recientes', 'adastra'); ?></h3>
 			<ul>
 				<?php
 					global $post;
@@ -28,7 +28,7 @@
 		</aside>
 	
 		<aside id="comentados">
-			<h3><?php _e( 'Posts más comentados'); ?></h3>
+			<h3><?php _e( 'Posts más comentados', 'adastra'); ?></h3>
 			<ul>
 				<?php
 					global $post;

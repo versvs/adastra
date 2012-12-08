@@ -24,19 +24,19 @@
 						<?php bloginfo('name'); ?>
 					</a>
 					&bull;
-					<?php _e('Tema'); ?> <a href="http://adastraerrans.com/ad-astra">
+					<?php _e('Tema', 'adastra'); ?> <a href="http://adastraerrans.com/ad-astra">
 							<em>Ad Astra</em>
 						  </a>
-					<?php _e('por'); ?>
+					<?php _e('por', 'adastra'); ?>
 					<a href="http://www.versvs.net/" title="Jose Alcántara" rel="follow">
 						Jose Alcántara
 					</a>
-					<?php _e('para'); ?>
+					<?php _e('para', 'adastra'); ?>
 					<a title="Inteligencia y an&aacute;lisis de redes, Madrid" href="http://www.cartograf.net">
 						Cartograf
 					</a>
 					&bull;
-					<?php _e('Lees esto gracias a'); ?> <a href="http://wordpress.org">WordPress</a>
+					<?php _e('Lees esto gracias a', 'adastra'); ?> <a href="http://wordpress.org">WordPress</a>
 				</section>
 			</footer>
 		</div>

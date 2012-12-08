@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ad Astra v3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-08 17:19+0100\n"
+"PO-Revision-Date: 2012-12-08 17:45+0100\n"
+"Last-Translator: Jose Alcántara <jose@cartograf.net>\n"
+"Language-Team: Cartograf <jose@cartograf.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../index.php:15
+#: ../search.php:14
+msgid "Comentarios para"
+msgstr "Comments for"
+
+#: ../index.php:40
+#: ../single.php:41
+#: ../search.php:39
+msgid "Enlace permanente para"
+msgstr "Permalink to"
+
+#: ../index.php:43
+#: ../single.php:44
+#: ../search.php:42
+msgid "@"
+msgstr "@"
+
+#: ../index.php:62
+#: ../search.php:61
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink to %s"
+
+#: ../index.php:63
+#: ../search.php:62
+msgid "Leer +"
+msgstr "Read +"
+
+#: ../single.php:25
+#: ../search.php:23
+msgid "Editar"
+msgstr "Edit"
+
+#: ../single.php:35
+msgid "Página del autor"
+msgstr "Author page"
+
+#: ../single.php:64
+#: ../search.php:69
+msgid "Etiquetas: "
+msgstr "Tags: "
+
+#: ../search.php:26
+msgid "Lee"
+msgstr "Read"
+
+#: ../header.php:25
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: ../functions.php:35
+msgid "Navegacion"
+msgstr "Navegation"
+
+#: ../functions.php:36
+msgid "Cintilla"
+msgstr "Cintilla"
+
+#: ../comments.php:9
+msgid "Este post está protegido con contraseña. Introduce la contraseña para ver los comentarios."
+msgstr "This post is password protected. Enter the password to see the comments."
+
+#: ../comments.php:26
+#, php-format
+msgid "Una idea sobre &ldquo;%2$s&rdquo;"
+msgstr "One idea about &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:26
+#, php-format
+msgid "%1$s ideas sobre &ldquo;%2$s&rdquo;"
+msgstr "%1$s ideas about &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:33
+#: ../comments.php:56
+msgid "Comment navigation"
+msgstr "Comment navigation"
+
+#: ../comments.php:34
+#: ../comments.php:57
+msgid "&larr; Comentarios anteriores"
+msgstr "&larr; Earlier comments"
+
+#: ../comments.php:35
+#: ../comments.php:58
+msgid "Comentarios más recientes &rarr;"
+msgstr "Newer comments &rarr;"
+
+#: ../comments.php:68
+msgid "Los comentarios están cerrados."
+msgstr "Comments are closed."
+
+#: ../paginado.php:2
+msgid "&laquo; Atrás"
+msgstr "&laquo; Back"
+
+#: ../paginado.php:3
+msgid "Adelante &raquo;"
+msgstr "Front &raquo;"
+
+#: ../sidebar.php:12
+msgid "Search:"
+msgstr "Search:"
+
+#: ../sidebar.php:16
+msgid "Search"
+msgstr "Search"
+
+#: ../sidebar.php:21
+msgid "Archives:"
+msgstr "Archives:"
+
+#: ../sidebar.php:25
+msgid "Meta:"
+msgstr "Meta:"
+
+#: ../sidebar.php:29
+msgid "Syndicate this site using RSS"
+msgstr "Syndicate this site using RSS"
+
+#: ../sidebar.php:29
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: ../sidebar.php:30
+msgid "The latest comments to all posts in RSS"
+msgstr "The latest comments to all posts in RSS"
+
+#: ../sidebar.php:30
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: ../sidebar.php:31
+msgid "This page validates as XHTML 1.0 Transitional"
+msgstr "Esta página valida como XHTML 1.0 Transitional"
+
+#: ../sidebar.php:31
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+
+#: ../sidebar.php:33
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+
+#: ../recomendado.php:3
+msgid "No hemos encontrado lo que buscabas."
+msgstr "We haven't found wht you were looking for."
+
+#: ../recomendado.php:5
+msgid "Volver al inicio"
+msgstr "Back to Home"
+
+#: ../recomendado.php:9
+msgid "Puedes hacer una búsqueda..."
+msgstr "You can perform a search..."
+
+#: ../recomendado.php:12
+msgid "o quizá te interesen los siguientes posts:"
+msgstr "or maybe you are interested in these posts:"
+
+#: ../recomendado.php:14
+msgid "Posts recientes"
+msgstr "Recent posts"
+
+#: ../recomendado.php:31
+msgid "Posts más comentados"
+msgstr "Most commented posts"
+
+#: ../footer.php:27
+msgid "Tema"
+msgstr "Theme"
+
+#: ../footer.php:30
+msgid "por"
+msgstr "by"
+
+#: ../footer.php:34
+msgid "para"
+msgstr "for"
+
+#: ../footer.php:39
+msgid "Lees esto gracias a"
+msgstr "You read this thanks to"
+

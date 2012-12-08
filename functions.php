@@ -1,4 +1,7 @@
 <?php
+//para habilitar traducciones
+load_theme_textdomain( 'adastra', TEMPLATEPATH.'/languages' );
+
 // Soporte para widgets en barra lateral y en el footer (3 regiones)
 if ( function_exists('register_sidebar') ) {
   register_sidebar(array(

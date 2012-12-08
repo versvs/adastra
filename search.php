@@ -11,7 +11,7 @@
 
 				<header class="post-info clearfix">
 				 	<span class="post-comments alignright">
-				 		<a rel="bookmark" title="<?php _e('Comentarios para'); ?> <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
+				 		<a rel="bookmark" title="<?php _e('Comentarios para', 'adastra'); ?> <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
 				 			<?php comments_number('0','1','%'); ?>
 				 		</a>
 				 	</span>
@@ -20,10 +20,10 @@
 						<?php the_category(' ') ?>
 					</span>
 					<span class="edit-link">
-						<?php edit_post_link('Editar'); ?>
+						<?php edit_post_link(__('Editar', 'adastra')); ?>
 					</span>
 					
-					<a class="post-title" title="<?php _e('Lee'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+					<a class="post-title" title="<?php _e('Lee', 'adastra'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
 						<h2>
 							<?php the_title(); ?>
 						</h2>
@@ -36,7 +36,7 @@
 					</span>
 						
 					<span class="post-date clearfix">
-						<a title="Enlace permanente para <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+						<a title="<?php _e('Enlace permanente para', 'adastra'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
 							<time pubdate datetime="<?php echo get_the_date('Y-m-d');?>T<?php the_time('H:i'); ?>">
 								<?php echo get_the_date(); ?>
 								<?php _e("@"); ?>
@@ -66,7 +66,7 @@
 			</section>
 			
 			<aside class="post-tags clearfix">
-				<?php the_tags('Etiquetas: ', ', ', ''); ?>
+				<?php the_tags(__('Etiquetas: ', 'adastra'), ', ', ''); ?>
 			</aside>
    	</article>
 	<?php endwhile; ?>

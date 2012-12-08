@@ -22,7 +22,7 @@
 						<?php the_category(' ') ?>
 					</span>
 					<span class="edit-link">
-						<?php edit_post_link('Editar'); ?>
+						<?php edit_post_link(__('Editar', 'adastra')); ?>
 					</span>
 					
 					<a class="post-title" href="<?php the_permalink() ?>" rel="bookmark">
@@ -32,13 +32,13 @@
 					</a>
 					
 					<span class="post-autor">
-						<a title="<?php _e('Página del autor'); ?>" href="<?php get_the_author_url(); ?>">
+						<a title="<?php _e('Página del autor', 'adastra'); ?>" href="<?php get_the_author_url(); ?>">
 							<?php the_author_posts_link() ?>
 						</a>
 					</span>
 						
 					<span class="post-date clearfix">
-						<a title="<?php _e('Enlace permanente para'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+						<a title="<?php _e('Enlace permanente para', 'adastra'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
 							<time pubdate datetime="<?php echo get_the_date('Y-m-d');?>T<?php the_time('H:i'); ?>">
 								<?php echo get_the_date(); ?>
 								<?php _e("@"); ?>
@@ -61,7 +61,7 @@
 			</section>
 			
 			<aside class="post-tags clearfix">
-				<?php the_tags(_e('Etiquetas: '), ', ', ''); ?>
+				<?php the_tags(__('Etiquetas: ', 'adastra'), ', ', ''); ?>
 			</aside>
    	</article>
     

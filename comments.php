@@ -6,7 +6,7 @@
 		if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it doesn't match the cookie
 			?>
 
-			<p class="nocomments">Este post está protegido con contraseña. Introduce la contraseña para ver los comentarios.</p>
+			<p class="nocomments"><?php _e('Este post estÃ¡ protegido con contraseÃ±a. Introduce la contraseÃ±a para ver los comentarios.', 'adastra'); ?></p>
 
 			<?php
 			return;
@@ -18,12 +18,12 @@
 ?>
 
 <!-- You can start editing here. -->
-<div id="comments">
+<article id="comments">
 
 	<?php if ( have_comments() ) : ?>
 		<h2 id="comments-title">
 			<?php
-				printf( _n( 'Una idea sobre &ldquo;%2$s&rdquo;', '%1$s ideas sobre &ldquo;%2$s&rdquo;', get_comments_number() ),
+				printf( _n( __('Una idea sobre &ldquo;%2$s&rdquo;'), __('%1$s ideas sobre &ldquo;%2$s&rdquo;'), get_comments_number() ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
@@ -32,7 +32,7 @@
 		<nav id="comment-nav-above">
 			<h1 class="assistive-text"><?php _e( 'Comment navigation' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios anteriores' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Comentarios más recientes &rarr;' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Comentarios mÃ¡s recientes &rarr;' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -54,8 +54,8 @@
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
 			<h1 class="assistive-text"><?php _e( 'Comment navigation' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios anteriores' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Comentarios más recientes &rarr;' ) ); ?></div>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Comentarios anteriores', 'adastra' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Comentarios mÃ¡s recientes &rarr;', 'adastra' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -65,10 +65,10 @@
 		 */
 		elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="nocomments"><?php _e( 'Los comentarios están cerrados.' ); ?></p>
+		<p class="nocomments"><?php _e( 'Los comentarios estÃ¡n cerrados.', 'adastra' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
 
 
-</div>
+</article>
