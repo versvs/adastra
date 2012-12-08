@@ -10,9 +10,9 @@
 	<?php while (have_posts()) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-			<div class="post-info clearfix">
+			<header class="post-info clearfix">
 				 	<span class="post-comments alignright">
-				 		<a rel="bookmark" title="Comentarios para <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
+				 		<a rel="bookmark" title="<?php _e('Comentarios para'); ?> <?php the_title(); ?>" href="<?php echo get_permalink(); ?>#comments">
 				 			<?php comments_number('0','1','%'); ?>
 				 		</a>
 				 	</span>
@@ -37,16 +37,18 @@
 					</span>
 						
 					<span class="post-date clearfix">
-						<a title="Enlace permanente para <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
-							<?php echo get_the_date(); ?>
-							<?php _e("@"); ?>
-							<?php the_time('H:i'); ?>
+						<a title="<?php _e('Enlace permanente para'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+							<time pubdate datetime="<?php echo get_the_date('Y-m-d');?>T<?php the_time('H:i'); ?>">
+								<?php echo get_the_date(); ?>
+								<?php _e("@"); ?>
+								<?php the_time('H:i'); ?>
+							</time>
 						</a>
 					</span>
 
-			</div>
+			</header>
 	
-			<div class="post-content clearfix">
+			<section class="post-content clearfix">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<div class="post-thumbnail">
 						<?php the_post_thumbnail('single-post') ?>
@@ -62,11 +64,11 @@
 					</a>
 				</span>				
 		aquí terminamos de comentar lo que no queremos usar -->
-			</div>
+			</section>
 			
-			<div class="post-tags clearfix">
+			<aside class="post-tags clearfix">
 				<?php the_tags('Etiquetas: ', ', ', ''); ?>
-			</div>
+			</aside>
    	</article>
 	<?php endwhile; ?>
 	

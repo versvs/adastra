@@ -51,7 +51,7 @@
 			<?php get_search_form(); ?>
 		</div>
 	
-		<div id="branding" class="branding">
+		<hgroup id="branding" class="branding">
 			<a href="<?php bloginfo('url'); ?>">
 				<h1>
 					<?php bloginfo('name'); ?>
@@ -60,7 +60,7 @@
 			<h4>
 				<?php bloginfo('description'); ?>
 			</h4>
-		</div>
+		</hgroup>
 	</header> <!-- /#header-wrapper -->
 </div> <!-- /#header-container -->
 

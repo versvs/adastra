@@ -5,13 +5,13 @@
 
 <div id="main-wrapper" class="main wrapper clearfix"> <!-- #main -->
 
-<div id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
+<section id="contenido" class="contenido alignleft clearfix"> <!-- #contenido -->
 
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 
-		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-			<div class="post-info clearfix">
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+			<header class="post-info clearfix">
 				 	<span class="post-comments alignright">
 				 		<a rel="bookmark" href="<?php echo get_permalink(); ?>#comments">
 				 			<?php comments_number('0','1','%'); ?>
@@ -32,22 +32,24 @@
 					</a>
 					
 					<span class="post-autor">
-						<a href="<?php get_the_author_url(); ?>">
+						<a title="<?php _e('Página del autor'); ?>" href="<?php get_the_author_url(); ?>">
 							<?php the_author_posts_link() ?>
 						</a>
 					</span>
 						
 					<span class="post-date clearfix">
-						<a href="<?php the_permalink() ?>" rel="bookmark">
-							<?php the_date(); ?>
-							<?php _e("@"); ?>
-							<?php the_time('H:i'); ?>
+						<a title="<?php _e('Enlace permanente para'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
+							<time pubdate datetime="<?php echo get_the_date('Y-m-d');?>T<?php the_time('H:i'); ?>">
+								<?php echo get_the_date(); ?>
+								<?php _e("@"); ?>
+								<?php the_time('H:i'); ?>
+							</time>
 						</a>
 					</span>
 
-			</div>
+			</header>
 	
-			<div class="post-content clearfix">
+			<section class="post-content clearfix">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<div class="post-thumbnail">
 						<?php the_post_thumbnail('single-post') ?>
@@ -56,12 +58,12 @@
 				
 				<?php the_content(); ?>
 						
-			</div>
+			</section>
 			
-			<div class="post-tags clearfix">
-				<?php the_tags('Etiquetas: ', ', ', ''); ?>
-			</div>
-   	</div>
+			<aside class="post-tags clearfix">
+				<?php the_tags(_e('Etiquetas: '), ', ', ''); ?>
+			</aside>
+   	</article>
     
    	<?php comments_template(); ?>
 	
@@ -75,7 +77,7 @@
 	
 
 <!-- /#contenido -->
-</div>
+</section>
 
 
 <?php get_template_part('sidebar'); ?>
