@@ -45,23 +45,6 @@ add_post_type_support( 'page', 'excerpt' );
 
 
 
-//añadiendo info de perfiles para mostrar en la página de autor
-function adastra_contactmethods( $contactmethods ) {
-	// Añadir Twitter
-	$contactmethods['twitter'] = 'Twitter';
-	//Añadir Facebook
-	$contactmethods['facebook'] = 'Facebook';
-	//Añadir Linkedin
-	$contactmethods['linkedin'] = 'Linkedin';
-	//Añadir G+
-	$contactmethods['googleplus'] = 'Google+';
-		
-	return $contactmethods;
-}
-
-add_filter('user_contactmethods','adastra_contactmethods',10,1);
-
-
 // cambiando el author por defecto de las url de usuario por algo más amigable
 add_filter('init', create_function('$a', 'global $wp_rewrite; $wp_rewrite->author_base = "autor"; $wp_rewrite->flush_rules();'));
 
