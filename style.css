@@ -6,7 +6,7 @@ Description: AdAstra es un tema sencillo, con una unica columna diseñado para s
 Author: <a href="http://www.versvs.net">Jose Alcántara</a>
 Tags: brown, one-column, fixed-width, fluid-width, light, widget
 AdAstra esta licenciado bajo los terminos de la licencia GPL v3 y esta dedicado a los amantes del software libre pata negra. ¡A disfrutarlo!
-por Jose Alcantara - Versvs -- http://www.versvs.net
+por Jose Alcantara - http://www.versvs.net
 
 Para WordPress 3.5.* :)
 */
@@ -14,8 +14,6 @@ Para WordPress 3.5.* :)
 
 /**
  *
- * Fuentes: PT Sans Narrow
- * Las licencias de las fuentes están incluidas en "fonts/OFL.txt"
  * Fuentes Ubuntu diseñadas con el patrocinio de Canonical Inc. http://font.ubuntu.com/
  * Fuentes Delicious fueron diseñadas por Jos Buivenga (exljbris) -> www.exljbris.com
  *
@@ -108,26 +106,6 @@ html {
 	max-width: 960px;
 	margin: 0 auto;
 	}
-
-
-/**
-  requisitos para adaptarnos al estandar
-  http://codex.wordpress.org/CSS
-*/
-.aligncenter,
-div.aligncenter {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   }
-
-.alignleft {
-   float: left;
-   }
-
-.alignright {
-   float: right;
-   }
 
 /**
  * Estilos basicos del tema
@@ -972,7 +950,9 @@ text-align:justify;
 
 
 
-/* Others */
+/* Otras cosas para seguir las recomendaciones del estándard propuesto en el Codex */
+/* http://codex.wordpress.org/CSS */
+
 
 .aligncenter,
 div.aligncenter {
