@@ -69,7 +69,7 @@
 	<?php endif; ?>
 
 
-	<?php $adastra_textarea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="4" aria-required="true"></textarea></p>'; ?>
+	<?php $adastra_textarea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="4" aria-required="true"></textarea></p><p id="comment-notice">Llevas más de 1000 letras, quizá deberías postear en tu blog y <a rel="nofollow" href="'.get_permalink().'">enlazar esta entrada</a> desde tu post.</p>'; ?>
 	<?php comment_form(array('comment_field' => $adastra_textarea)); ?>
 
 

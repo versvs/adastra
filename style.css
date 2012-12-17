@@ -896,6 +896,34 @@ text-align:justify;
 	font-size: 15px;
 	}
 
+#comment-notice {
+	display: block;
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	font-size: 13px;
+	padding: 5px;
+	border: 1px #ffff88 solid;
+	background: #ffffcc;
+	text-align: center;
+	/* Firefox */
+	-moz-transition-duration: 800ms;
+	-moz-transition-property: opacity,height;
+	-moz-transition-timing-function: ease;
+	/* Chromium */	
+	-webkit-transition-duration: 800ms;
+	-webkit-transition-property: opacity,height;
+	-webkit-transition-timing-function: ease;
+	/* Opera */	
+	-o-transition-duration: 800ms;
+	-o-transition-property: opacity,height;
+	-o-transition-timing-function: ease;
+	/* Standard */ /* IE juajua */	
+	transition-duration: 800ms;
+	transition-property: opacity,height;
+	transition-timing-function: ease;
+	}
+
 /* FIN diferentes estilos para comentarios anidados */
 
 
