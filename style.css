@@ -113,20 +113,20 @@ html {
 /* Estructura */
 
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 980px) {
 	.header {
 		border-bottom: 1px solid #8E7A5B;
 		}
 	
 	.contenido {
-		width: 100%;
+		width: auto;
 		max-width: 620px;
 		min-width: 350px;
-		margin-right: 30px;
+		margin-right: 1.5em;
 		}
 	
 	.main-sidebar {
-		width: 260px;
+		width: 310px;
 		}
 		
 	.footer {
@@ -144,32 +144,45 @@ html {
 	}
 }
 	
-@media only screen and (max-width: 959px) and (min-width: 600px)  {
+@media only screen and (max-width: 979px) and (min-width: 600px)  {
 	.header {
 		border-bottom: 1px solid #8E7A5B;
 		}
 	
 	.contenido {
-		max-width: 620px;
-		min-width: 310px;
-		margin-right: 30px;
+		width: 98%;
+		margin: 1%;
 		}
 	
 	.main-sidebar {
-		width: 260px;
+		width: 98%;
+		margin: 1%;
 		}
+	
+	.main-sidebar .widget {
+		width: calc(100%/3 - 3em);
+		margin-right: 1.5em;
+		margin-bottom: 1.5em;
+		padding: 1em;
+		float: left;
+		}
+
+	.main-sidebar .widget:last-child {
+		margin-right: 0;
+	}
+		
+		
 		
 	.footer {
-		padding: 20px;
+		padding: 1em;
 		}
 	.footer .widget-area {
-		min-width: 150px;
+		width: calc(100%/3 - 3em);
 		float: left;
-		margin: 0 20px 0 0;
-		padding: 20px;
+		margin-right: 1.5em;
+		padding: 1em;
 		}
 	.footer .widget-area.derecha {
-		min-width: 300px;
 		margin-right: 0;
 	}	
 
@@ -181,15 +194,24 @@ html {
 		}
 	
 	.contenido {
-		width: 100%;
+		width: 98%;
+		margin: 1%;
 		display: block;
-		padding: 4px;
 		}
 	
 	.main-sidebar {
-		width: 100%;
+		width: 98%;
+		margin: 1%;
 		display: block;
 		}
+	
+	.main-sidebar .widget {
+		width: calc(100% - 2em);
+		margin-bottom: 1.5em;
+		padding: 1em;
+		float: left;
+		}	
+
 		
 	.footer {
 		padding: 20px;
@@ -319,8 +341,6 @@ h4 {
 
 .main-sidebar .widget {
 	background: url('imagenes/blanco25.png');
-	padding: 25px;
-	margin-bottom: 30px;
 	} 
 
 
@@ -1056,8 +1076,8 @@ div.aligncenter {
 }
 
 .wp-caption {
-	max-width: 460px;
-	max-height: 345px;
+	max-width: 90%;
+	height: auto;
    border: 1px solid #ddd;
    text-align: center;
    background-color: #f3f3f3;
