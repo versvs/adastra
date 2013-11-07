@@ -114,6 +114,17 @@ html {
 
 
 @media only screen and (min-width: 980px) {
+
+	p {
+		font-size: 1.1em;
+		line-height: 2em;
+		}
+
+	.wrapper {
+		max-width: 960px;
+		margin: 0 auto;
+		}	
+	
 	.header {
 		border-bottom: 1px solid #8E7A5B;
 		}
@@ -125,10 +136,24 @@ html {
 		margin-right: 1.5em;
 		}
 	
+	.post-title h1,
+	.post-title h2 {
+		font-size: 2em;
+		}
+
+	
 	.main-sidebar {
 		width: 310px;
 		}
-		
+
+	.main-sidebar .widget {
+		width: calc(100% - 2em);
+		margin-bottom: 1.5em;
+		padding: 1em;
+		float: left;
+		}
+
+
 	.footer {
 		padding: 20px;
 		}
@@ -144,15 +169,28 @@ html {
 	}
 }
 	
-@media only screen and (max-width: 979px) and (min-width: 600px)  {
+@media only screen and (max-width: 979px) and (min-width: 400px)  {
+	
+	
+	p {
+		font-size: 1em;
+		line-height: 2em;
+		}	
 	.header {
 		border-bottom: 1px solid #8E7A5B;
 		}
+
 	
 	.contenido {
 		width: 98%;
 		margin: 1%;
 		}
+	
+	.post-title h1,
+	.post-title h2 {
+		font-size: 2em;
+		}
+
 	
 	.main-sidebar {
 		width: 98%;
@@ -188,16 +226,48 @@ html {
 
 }
 
-@media only screen and (max-width: 599px)  {
+@media only screen and (max-width: 400px)  {
+
+	html {
+		background:transparent;
+		width:320px;
+		padding:0px 0px;
+	}
+	body {
+		box-sizing: border-box;
+		width:320px;
+		padding:0.4em;
+		overflow-x:hidden;
+	}	
+	
 	.header {
 		border-bottom: 1px solid #8E7A5B;
 		}
 	
-	.contenido {
-		width: 98%;
-		margin: 1%;
-		display: block;
+	.branding {
+		width: 100%;
 		}
+	.branding h1 {
+		font-size: 2em;
+		}
+	.branding h4 {
+		font-size: 0.6em;
+		}
+	.main {
+		margin: 0 auto;
+		width: 97%;
+		}
+	
+	.contenido {
+		margin: 1% auto;
+		display: block;
+		float: none;
+		}
+	
+	
+	.post-title h1, .post-title h2 {
+	    font-size: 1.5em;
+	    }
 	
 	.main-sidebar {
 		width: 98%;
@@ -231,15 +301,13 @@ html {
 body{
 	background:#e6e2c5 url(imagenes/body.png) repeat 0 0;
 	color:#8E7A5B;
-	font:17px "Delicious", "Calibri", sans-serif;
+	font:1em "Delicious", "Calibri", sans-serif;
 	padding:0;
 	margin:0;
 	}
 
 	
 p {
-	font-size: 21px;
-	line-height: 30px;
 	color: #333;
 	}
 	
@@ -311,23 +379,23 @@ border:1px solid #555;
 /* Headers */
 
 h1 {
-	font-size:47px;
+	font-size:3em;
 	text-transform:lowercase;
 	text-align: center;
 	}
 
 
 h2 {
-	font-size: 20px;
+	font-size: 1.5em;
 	margin: 0 0 7px 0;
 	}
 
 h3 {
-	font-size:12px;
+	font-size:1.3em;
 	}
 
 h4 {
-	font-size:14px;
+	font-size:1em;
 	}
 
 
@@ -589,8 +657,8 @@ h4 {
 
 .post {
 	background: url('imagenes/blanco25.png');
-	padding: 30px;
-	margin-bottom: 30px;
+	padding: 1.5em;
+	margin-bottom: 1.5em;
 	text-align: justify;
 	}
 	
@@ -622,17 +690,13 @@ h4 {
 	padding-left: 32px;
 	padding-bottom: 3px;
 	display: inline-block;
-	font-size: 21px;
+	font-size: 1.2em;
 	}
 
 .post-title {
 	margin: 3px;
 	}
 
-.post-title h1,
-.post-title h2 {
-	font-size: 32px;
-	}
 
 :hover.post-title {
 	border-bottom: 1px #aaa dashed;
@@ -731,12 +795,14 @@ h4 {
 	border: 1px solid #999;
 	margin-bottom: 15px;
 	max-width: 90%;
+	height: auto;
 	display: block;
 	margin: 0 auto 15px auto;
 }
 
 .post .post-content img {
 	max-width: 90%;
+	height: auto;
 	}
 
 img.wp-smiley{

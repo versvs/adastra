@@ -30,6 +30,20 @@
 	
 <?php //multitud de formatos de feed, rss 0.92 podría quitarse, la verdad, y atom también... pero bueno ?>
 <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen" />
+
+	<?php
+		if (strpos($_SERVER['HTTP_USER_AGENT'],'iPad')===FALSE){
+		?>
+			<meta name="viewport" id="viewport" content="width=320">
+			<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/mobile.css" type="text/css" media="handheld, only screen and (max-width: 799px)" >
+	<?php } ?>
+
+<script src="<?php bloginfo('template_directory')?>/js/mobile.js"></script>
+
+
+
+
+
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS 2.0 Feed" href="<?php echo get_feed_link( 'rss2' ); ?>" />
 <link rel="alternate" type="text/xml" title="RSS .92" href="<?php echo get_feed_link( 'rss' ); ?>" />
 <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php echo get_feed_link( 'atom' ); ?>" />
@@ -42,9 +56,18 @@
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.autogrow.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/scripts.js"></script>
 
+
+
+
+
+
 <!--[if lt IE 9]>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/html5.js"></script>
 <![endif]-->
+
+
+
+
 
 
 <?php wp_head(); ?>
