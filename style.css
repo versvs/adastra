@@ -1,14 +1,14 @@
 /*
-Theme Name: Ad Astra
+Theme Name: Ad Astra 4
 Theme URI: http://www.versvs.net/
-Version: 3.0
+Version: 4.0
 Description: AdAstra es un tema sencillo, con una unica columna diseñado para ser ligero. Contiene 3 áreas para widgets en la zona del pie. La versión 3 está reescrita completamente usando HTML5.
 Author: <a href="http://www.versvs.net">Jose Alcántara</a>
 Tags: brown, one-column, fixed-width, fluid-width, light, widget
 AdAstra esta licenciado bajo los terminos de la licencia GPL v3 y esta dedicado a los amantes del software libre pata negra. ¡A disfrutarlo!
 por Jose Alcantara - http://www.versvs.net
 
-Para WordPress 3.5.* :)
+Tested with WordPress 3.7.* :)
 */
 
 
@@ -80,7 +80,10 @@ Para WordPress 3.5.* :)
  * Algunas cosas genericas
  */
 
-
+* {
+	padding: 0;
+	margin: 0;
+	}
 
 .clearfix:after {
     content: ".";
@@ -111,7 +114,6 @@ html {
  * Estilos basicos del tema
  *
  **/	
-	
 
 body{
 	background:#e6e2c5 url(imagenes/body.png) repeat 0 0;
@@ -219,25 +221,95 @@ h4 {
 
 /* Estructura */
 
-.header {
-	border-bottom: 1px solid #8E7A5B;
-	}
 
-.contenido {
-	width: 100%;
-	max-width: 620px;
-	min-width: 350px;
-	margin-right: 30px;
+@media only screen and (min-width: 960px) {
+	.header {
+		border-bottom: 1px solid #8E7A5B;
+		}
+	
+	.contenido {
+		width: 100%;
+		max-width: 620px;
+		min-width: 350px;
+		margin-right: 30px;
+		}
+	
+	.main-sidebar {
+		width: 260px;
+		}
+		
+	.footer {
+		padding: 20px;
+		}
+	.footer .widget-area {
+		width: 250px;
+		float: left;
+		margin: 0 20px 0 0;
+		padding: 20px;
+		}
+	.footer .widget-area.derecha {
+		width: 300px;
+		margin-right: 0;
 	}
+}
+	
+@media only screen and (max-width: 959px) and (min-width: 600px)  {
+	.header {
+		border-bottom: 1px solid #8E7A5B;
+		}
+	
+	.contenido {
+		max-width: 620px;
+		min-width: 310px;
+		margin-right: 30px;
+		}
+	
+	.main-sidebar {
+		width: 260px;
+		}
+		
+	.footer {
+		padding: 20px;
+		}
+	.footer .widget-area {
+		min-width: 150px;
+		float: left;
+		margin: 0 20px 0 0;
+		padding: 20px;
+		}
+	.footer .widget-area.derecha {
+		min-width: 300px;
+		margin-right: 0;
+	}	
 
-.main-sidebar {
-	width: 260px;
-	}
+}
+
+@media only screen and (max-width: 599px)  {
+	.header {
+		border-bottom: 1px solid #8E7A5B;
+		}
 	
-.footer {
-	padding: 20px;
-	}
+	.contenido {
+		width: 100%;
+		display: block;
+		padding: 4px;
+		}
 	
+	.main-sidebar {
+		width: 100%;
+		display: block;
+		}
+		
+	.footer {
+		padding: 20px;
+		}
+	.footer .widget-area {
+		width: 100%;
+		display: block;
+		}
+}
+
+
 	
 /**
  *
@@ -248,7 +320,6 @@ h4 {
 	background: url('imagenes/blanco25.png');
 	padding: 25px;
 	margin-bottom: 30px;
-	width: 260px;
 	} 
 
 
@@ -268,21 +339,13 @@ h4 {
 	}
 
 .footer .widget-area {
-	width: 250px;
-	float: left;
 	background: url(img/blanco25.png);
-	margin: 0 20px 0 0;
-	padding: 20px;
 	}
 	
 .footer .widget-area a {
 	text-decoration: none;
 	}
 
-.footer .widget-area.derecha {
-	width: 300px;
-	margin-right: 0;
-	}
 	
 .widget ul.blogroll,
 .widget ul.blogroll li {
@@ -340,7 +403,6 @@ h4 {
 .nav li a {
 	display:inline;
 	padding:6px 14px;
-	width:92px;
 	border: 1px solid #ccc;
 	height:auto;
 	color:#8E7A5B;
@@ -540,12 +602,6 @@ h4 {
 	padding-bottom: 3px;
 	display: inline-block;
 	font-size: 21px;
-	}
-
-.titulofecha {
-	position: relative;
-	min-height: 45px;
-	width: 100%;
 	}
 
 .post-title {
