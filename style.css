@@ -147,9 +147,9 @@ html {
 		}
 
 	.main-sidebar .widget {
-		width: calc(100% - 2em);
+		width: calc(100% - 4em);
 		margin-bottom: 1.5em;
-		padding: 1em;
+		padding: 2em;
 		float: left;
 		}
 
@@ -182,8 +182,8 @@ html {
 
 	
 	.contenido {
-		width: 98%;
-		margin: 1%;
+		width: 94%;
+		margin: 3%;
 		}
 	
 	.post-title h1,
@@ -198,18 +198,16 @@ html {
 		}
 	
 	.main-sidebar .widget {
-		width: calc(100%/3 - 3em);
+		width: calc(100%/3 - 4em);
 		margin-right: 1.5em;
-		margin-bottom: 1.5em;
-		padding: 1em;
+		margin-bottom: 2em;
+		padding: 2em;
 		float: left;
 		}
 
 	.main-sidebar .widget:last-child {
 		margin-right: 0;
-	}
-		
-		
+	}	
 		
 	.footer {
 		padding: 1em;
@@ -225,6 +223,28 @@ html {
 	}	
 
 }
+
+@media only screen and (max-width: 800px) and (min-width: 400px)  {
+	
+	.main-sidebar .widget {
+		width: calc(100% - 4em);
+	}
+
+	.footer .widget-area {
+		width: calc(100% - 4em);
+		float: left;
+		margin-right: 0;
+		padding: 2em;
+		}
+
+	.footer .widget-area .widget li {
+		float: left;
+		width: 45%;
+		}
+
+}
+
+
 
 @media only screen and (max-width: 400px)  {
 
@@ -270,8 +290,8 @@ html {
 	    }
 	
 	.main-sidebar {
-		width: 98%;
-		margin: 1%;
+		width: 94%;
+		margin: 3%;
 		display: block;
 		}
 	
@@ -657,7 +677,7 @@ h4 {
 
 .post {
 	background: url('imagenes/blanco25.png');
-	padding: 1.5em;
+	padding: 2em;
 	margin-bottom: 1.5em;
 	text-align: justify;
 	}
@@ -837,8 +857,7 @@ img.wp-smiley:hover{
 
 #comments {
 	background: url('imagenes/blanco25.png');
-	padding: 30px 30px 60px 30px;
-	width: 560px;
+	padding: 2em 2em 4em 2em;
 	text-align: left;
 	}
 
@@ -867,13 +886,13 @@ en el comentario */
 	}
 
 #comments .comment-form-comment {
-	width: 555px;
+	width: 100%;
 	}
 
 #comments .comment-form-comment textarea {
 	border: 1px #ccc solid;
-	width: 530px;
-	padding: 15px;
+	width: calc(100% - 2em);
+	padding: 1em;
 	height: 70px;
 	font-size: 19px;
 	/* Firefox */

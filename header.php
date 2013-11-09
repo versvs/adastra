@@ -76,6 +76,7 @@
 
 <div id="nav-container" class="nav container clearfix">
 	<nav id="nav" class="wrapper clearfix">
+			<a id="menu_button" href="#">Menú</a>
 			<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
 	</nav>
 </div>
@@ -85,7 +86,7 @@
 		<div id="busqueda">
 			<?php get_search_form(); ?>
 		</div>
-
+<a id="menu_button" href="#">Menú</a>
 		<a href="<?php bloginfo('url'); ?>">	
 			<hgroup id="branding" class="branding">
 				<h1><?php bloginfo('name'); ?></h1>
