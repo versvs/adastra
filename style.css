@@ -93,6 +93,19 @@ Tested with WordPress 3.7.* :)
     visibility: hidden;
 }
 
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
 .hidden {
 	content: " ";
 	}
@@ -113,204 +126,93 @@ html {
 /* Estructura */
 
 
-@media only screen and (min-width: 980px) {
-
-	p {
-		font-size: 1.1em;
-		line-height: 2em;
-		}
-
-	.wrapper {
-		max-width: 960px;
-		margin: 0 auto;
-		}	
-	
-	.header {
-		border-bottom: 1px solid #8E7A5B;
-		}
-	
-	.contenido {
-		width: auto;
-		max-width: 620px;
-		min-width: 350px;
-		margin-right: 1.5em;
-		}
-	
-	.post-title h1,
-	.post-title h2 {
-		font-size: 2em;
-		}
-
-	
-	.main-sidebar {
-		width: 310px;
-		}
-
-	.main-sidebar .widget {
-		width: calc(100% - 4em);
-		margin-bottom: 1.5em;
-		padding: 2em;
-		float: left;
-		}
-
-
-	.footer {
-		padding: 20px;
-		}
-	.footer .widget-area {
-		width: 250px;
-		float: left;
-		margin: 0 20px 0 0;
-		padding: 20px;
-		}
-	.footer .widget-area.derecha {
-		width: 300px;
-		margin-right: 0;
-	}
-}
-	
-@media only screen and (max-width: 979px) and (min-width: 400px)  {
-	
-	
-	p {
-		font-size: 1em;
-		line-height: 2em;
-		}	
-	.header {
-		border-bottom: 1px solid #8E7A5B;
-		}
-
-	
-	.contenido {
-		width: 94%;
-		margin: 3%;
-		}
-	
-	.post-title h1,
-	.post-title h2 {
-		font-size: 2em;
-		}
-
-	
-	.main-sidebar {
-		width: 98%;
-		margin: 1%;
-		}
-	
-	.main-sidebar .widget {
-		width: calc(100%/3 - 4em);
-		margin-right: 1.5em;
-		margin-bottom: 2em;
-		padding: 2em;
-		float: left;
-		}
-
-	.main-sidebar .widget:last-child {
-		margin-right: 0;
-	}	
-		
-	.footer {
-		padding: 1em;
-		}
-	.footer .widget-area {
-		width: calc(100%/3 - 3em);
-		float: left;
-		margin-right: 1.5em;
-		padding: 1em;
-		}
-	.footer .widget-area.derecha {
-		margin-right: 0;
-	}	
-
+#mini-brand {
+    color: #8E6A5B;
+    float: left;
+    font-family: ubuntu;
+    font-size: 1.2em;
+    padding: 0 0 0 1em;
+    width: auto;
+    text-transform: lowercase;
+    display: none;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 400px)  {
-	
-	.main-sidebar .widget {
-		width: calc(100% - 4em);
+#mini-brand:hover {
+	color: #fff;
 	}
 
-	.footer .widget-area {
-		width: calc(100% - 4em);
-		float: left;
-		margin-right: 0;
-		padding: 2em;
-		}
-
-	.footer .widget-area .widget li {
-		float: left;
-		width: 45%;
-		}
-
-}
-
-
-
-@media only screen and (max-width: 400px)  {
-
-	html {
-		background:transparent;
-		width:320px;
-		padding:0px 0px;
+.nav.container {
+	background: #d4d1b9;
+	border-bottom: 2px solid #283744;
+	position: fixed;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	z-index: 50;
 	}
-	body {
-		box-sizing: border-box;
-		width:320px;
-		padding:0.4em;
-		overflow-x:hidden;
-	}	
-	
-	.header {
-		border-bottom: 1px solid #8E7A5B;
-		}
-	
-	.branding {
-		width: 100%;
-		}
-	.branding h1 {
-		font-size: 2em;
-		}
-	.branding h4 {
-		font-size: 0.6em;
-		}
-	.main {
-		margin: 0 auto;
-		width: 97%;
-		}
-	
-	.contenido {
-		margin: 1% auto;
-		display: block;
-		float: none;
-		}
-	
-	
-	.post-title h1, .post-title h2 {
-	    font-size: 1.5em;
-	    }
-	
-	.main-sidebar {
-		width: 94%;
-		margin: 3%;
-		display: block;
-		}
-	
-	.main-sidebar .widget {
-		width: calc(100% - 2em);
-		margin-bottom: 1.5em;
-		padding: 1em;
-		float: left;
-		}	
 
-		
-	.footer {
-		padding: 20px;
-		}
-	.footer .widget-area {
-		width: 100%;
-		display: block;
-		}
+.nav.container.fixed {
+	opacity: 0.95;
+	}
+
+.nav.container.fixed #mini-brand {
+	display: block;
+	}
+
+nav {
+	height: 40px;
+	width: 100%;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+
 }
+nav ul {
+	padding: 0;
+	margin: 0 0 0 auto;
+	width: auto;
+	height: 40px;
+	display: table;
+}
+nav li {
+	display: inline;
+	float: left;
+}
+nav a {
+	color: #8E7A5B;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
+nav li a {
+	border-right: 1px solid #8E7A5B;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	background-color: #8E7A5B;
+	border-bottom: 0;
+	color: #fff;
+}
+nav a#pull {
+	display: none;
+}
+
+.header.container {
+	border-bottom: 0;
+	position: relative;
+	top: 3em;
+	margin-bottom: 3em;
+	}
+
 
 
 /**
@@ -341,7 +243,6 @@ ul,li {
 	padding: 0;
 	list-style: none;
 	}	
-
 
 a,
 a:visited {
@@ -502,13 +403,13 @@ h4 {
 
 .nav ul {
 	list-style:none;
-	margin:6px auto;
 	}
 
 .nav li {
 	display:inline;
 	}
 
+/*
 .nav li a {
 	display:inline;
 	padding:6px 14px;
@@ -529,6 +430,8 @@ h4 {
 	border: 1px solid #8e7a5b;
 	text-decoration:none;
 	}
+
+*/
 
 
 
@@ -1224,3 +1127,262 @@ div.aligncenter {
 #comentados li {
 	margin: 6px 0;
 	}
+
+
+
+
+@media only screen and (min-width: 980px) {
+
+	p {
+		font-size: 1.1em;
+		line-height: 2em;
+		}
+
+	.wrapper {
+		max-width: 960px;
+		margin: 0 auto;
+		}	
+	
+	.header {
+		border-bottom: 1px solid #8E7A5B;
+		}
+	
+	.contenido {
+		width: auto;
+		max-width: 620px;
+		min-width: 350px;
+		margin-right: 1.5em;
+		}
+	
+	.post-title h1,
+	.post-title h2 {
+		font-size: 2em;
+		}
+
+	
+	.main-sidebar {
+		width: 310px;
+		}
+
+	.main-sidebar .widget {
+		width: calc(100% - 4em);
+		margin-bottom: 1.5em;
+		padding: 2em;
+		float: left;
+		}
+
+
+	.footer {
+		padding: 20px;
+		}
+	.footer .widget-area {
+		width: 250px;
+		float: left;
+		margin: 0 20px 0 0;
+		padding: 20px;
+		}
+	.footer .widget-area.derecha {
+		width: 300px;
+		margin-right: 0;
+	}
+}
+
+	
+@media only screen and (max-width: 979px) and (min-width: 400px)  {
+	
+	
+	p {
+		font-size: 1em;
+		line-height: 2em;
+		}	
+	.header {
+		border-bottom: 1px solid #8E7A5B;
+		}
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+	
+	.contenido {
+		width: 94%;
+		margin: 3%;
+		}
+	
+	.post-title h1,
+	.post-title h2 {
+		font-size: 2em;
+		}
+
+	
+	.main-sidebar {
+		width: 98%;
+		margin: 1%;
+		}
+	
+	.main-sidebar .widget {
+		width: calc(100%/3 - 4em);
+		margin-right: 1.5em;
+		margin-bottom: 2em;
+		padding: 2em;
+		float: left;
+		}
+
+	.main-sidebar .widget:last-child {
+		margin-right: 0;
+	}	
+		
+	.footer {
+		padding: 1em;
+		}
+	.footer .widget-area {
+		width: calc(100%/3 - 3em);
+		float: left;
+		margin-right: 1.5em;
+		padding: 1em;
+		}
+	.footer .widget-area.derecha {
+		margin-right: 0;
+	}	
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 320px)  {
+
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #283744;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('imagenes/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+
+
+	.main-sidebar .widget {
+		width: calc(100% - 4em);
+	}
+
+	.footer .widget-area {
+		width: calc(100% - 4em);
+		float: left;
+		margin-right: 0;
+		padding: 2em;
+		}
+
+	.footer .widget-area .widget li {
+		float: left;
+		width: 45%;
+		}
+
+}
+
+
+
+@media only screen and (max-width: 400px)  {
+
+	html {
+		background:transparent;
+		width:320px;
+		padding:0px 0px;
+	}
+	body {
+		box-sizing: border-box;
+		width:320px;
+		padding:0.4em;
+		overflow-x:hidden;
+	}	
+	
+	.header {
+		border-bottom: 1px solid #8E7A5B;
+		}
+	
+	.branding {
+		width: 100%;
+		}
+	.branding h1 {
+		font-size: 2em;
+		}
+	.branding h4 {
+		font-size: 0.6em;
+		}
+	.main {
+		margin: 0 auto;
+		width: 97%;
+		}
+
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #576979;
+	}
+
+
+	.contenido {
+		margin: 1% auto;
+		display: block;
+		float: none;
+		}
+	
+	
+	.post-title h1, .post-title h2 {
+	    font-size: 1.5em;
+	    }
+	
+	.main-sidebar {
+		width: 94%;
+		margin: 3%;
+		display: block;
+		}
+	
+	.main-sidebar .widget {
+		width: calc(100% - 2em);
+		margin-bottom: 1.5em;
+		padding: 1em;
+		float: left;
+		}	
+
+		
+	.footer {
+		padding: 20px;
+		}
+	.footer .widget-area {
+		width: 100%;
+		display: block;
+		}
+}

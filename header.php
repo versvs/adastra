@@ -66,8 +66,25 @@
 <![endif]-->
 
 
-
-
+<script type="text/javascript" >
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('#nav ul');
+			menuHeight	= menu.height();
+	
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+	
+		$(window).resize(function(){
+	  		var w = $(window).width();
+	  		if(w > 320 && menu.is(':hidden')) {
+	  			menu.removeAttr('style');
+	  		}
+	 		});
+	});
+</script>
 
 
 <?php wp_head(); ?>
@@ -76,17 +93,17 @@
 
 <div id="nav-container" class="nav container clearfix">
 	<nav id="nav" class="wrapper clearfix">
-			<a id="menu_button" href="#">Menú</a>
+			<a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>" id="mini-brand"><?php bloginfo('name'); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
+			<a href="#" id="pull">Menu</a>
 	</nav>
 </div>
 
-<div id="header-container" class="container clearfix">
+<div id="header-container" class="header container clearfix">
 	<header id="header-wrapper" class="header wrapper clearfix">
 		<div id="busqueda">
 			<?php get_search_form(); ?>
 		</div>
-<a id="menu_button" href="#">Menú</a>
 		<a href="<?php bloginfo('url'); ?>">	
 			<hgroup id="branding" class="branding">
 				<h1><?php bloginfo('name'); ?></h1>
