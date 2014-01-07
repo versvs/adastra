@@ -1,4 +1,4 @@
-/*
+f/*
 Theme Name: Ad Astra 4
 Theme URI: http://www.versvs.net/
 Version: 4.0
@@ -131,10 +131,13 @@ html {
     float: left;
     font-family: ubuntu;
     font-size: 1.2em;
-    padding: 0 0 0 1em;
+    padding: 0;
     width: auto;
     text-transform: lowercase;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 #mini-brand:hover {
@@ -152,12 +155,19 @@ html {
 	z-index: 50;
 	}
 
+.nav-container.topped {
+	top: 0;
+	}
+
 .nav.container.fixed {
 	opacity: 0.95;
+	top: 0;
 	}
 
 .nav.container.fixed #mini-brand {
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	padding: 0 2em;
 	}
 
 nav {
@@ -636,11 +646,13 @@ h4 {
 	background: url('imagenes/user.png') no-repeat;
 	padding-left: 25px;
 	margin: 0 20px 5px 0;
+	float: left;
 	}
 	
 .post-date {
 	background: url('imagenes/calendar.png') no-repeat;
 	padding-left: 25px;
+	float: left;
 	}
 	
 .post .post-tags {
@@ -712,8 +724,7 @@ h4 {
 }
 
 
-.post .post-content img,
-.post .post-content iframe {
+.post .post-content img {
 	padding: 5px;
 	border: 1px solid #999;
 	margin-bottom: 15px;
@@ -1198,6 +1209,8 @@ div.aligncenter {
 	.header {
 		border-bottom: 1px solid #8E7A5B;
 		}
+
+/*	
 	nav { 
   		height: auto;
   	}
@@ -1221,6 +1234,7 @@ div.aligncenter {
 	  	text-indent: 25px;
   	}
 	
+	*/
 	.contenido {
 		width: 94%;
 		margin: 3%;
@@ -1233,8 +1247,8 @@ div.aligncenter {
 
 	
 	.main-sidebar {
-		width: 98%;
-		margin: 1%;
+		width: 94%;
+		margin: 3%;
 		}
 	
 	.main-sidebar .widget {
@@ -1266,6 +1280,7 @@ div.aligncenter {
 
 @media only screen and (max-width: 800px) and (min-width: 320px)  {
 
+/*
 	nav {
 		border-bottom: 0;
 	}
@@ -1289,6 +1304,16 @@ div.aligncenter {
 		right: 15px;
 		top: 10px;
 	}
+
+*/
+
+
+	.nav ul {
+		display: none;
+		}
+	.header #busqueda {
+		display: none;
+		}	
 
 
 	.main-sidebar .widget {
@@ -1321,10 +1346,10 @@ div.aligncenter {
 	body {
 		box-sizing: border-box;
 		width:320px;
-		padding:0.4em;
+		padding:0em;
 		overflow-x:hidden;
-	}	
-	
+	}		
+
 	.header {
 		border-bottom: 1px solid #8E7A5B;
 		}
