@@ -48,11 +48,6 @@
 			</header>
 	
 			<section class="post-content clearfix">
-				<?php if ( has_post_thumbnail() ) : ?>
-					<div class="post-thumbnail">
-						<?php the_post_thumbnail('single-post') ?>
-					</div>
-				<?php endif; ?>
 				
 				<?php the_content(); ?>
 						
