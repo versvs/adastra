@@ -8,7 +8,7 @@ Tags: brown, one-column, fixed-width, fluid-width, light, widget
 AdAstra esta licenciado bajo los terminos de la licencia GPL v3 y esta dedicado a los amantes del software libre pata negra. ¡A disfrutarlo!
 por Jose Alcantara - http://www.versvs.net
 
-Tested with WordPress 3.7.* :)
+Tested with WordPress 3.8.* :)
 */
 
 
@@ -712,6 +712,7 @@ h4 {
 
 .post .post-content ol li {
 	list-style: decimal outside none;
+	margin:0 0 15px 30px;
 	}
 
 .post .post-content ul li {
