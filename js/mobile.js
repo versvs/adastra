@@ -29,9 +29,8 @@ jQuery(document).ready(function (){
 	windowInnerHeight			= window.innerHeight;
 	windowDevicePixelRatio	= window.devicePixelRatio;
 
-	if(isAndroid && isMobile) {
-		changeViewport();
-
+	if(isAndroid && isMobile ) {
+			changeViewport();
 		jQuery(window).bind('orientationchange',function (e){
 
 			setTimeout(function (){

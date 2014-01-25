@@ -75,8 +75,9 @@
 <div id="nav-container" class="nav container clearfix">
 	<nav id="nav" class="wrapper clearfix">
 			<a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>" id="mini-brand"><?php bloginfo('name'); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>
-			<a href="#" id="pull">Menu</a>
+			<div href="#" id="menu-icon"></div>
+			<?php wp_nav_menu( array( 'theme_location' => 'navegacion' ) ); ?>		
+			<?php wp_nav_menu( array( 'theme_location' => 'movil' ) ); ?>
 	</nav>
 </div>
 
