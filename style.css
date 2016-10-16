@@ -332,8 +332,14 @@ h4 {
 	}
 
 
+/**
+ *
+ * list items dentro de post y widgets
+ */
 
-
+.widget li, .post li {
+	width: 90%;
+	}
 	
 /**
  *
@@ -720,6 +726,7 @@ li {
 .post .post-content ul li {
 	list-style: circle outside none;
 	margin:0 0 15px 30px;
+	width: 100%;
 	}
 
 .post .post-content li {
